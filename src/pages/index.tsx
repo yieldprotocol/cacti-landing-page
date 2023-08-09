@@ -115,7 +115,7 @@ export default function Home() {
           <p className="text-5xl mb-5">Opensource and built in Public</p>
           <div className="text-center flex flex-col">
             <p className="text-sm text-[28px] mb-3" style={{color: 'rgba(255, 255, 255, 0.8)'}}>
-              We've released Cacti under an AGPL license.
+              We&apos;ve released Cacti under an AGPL license.
             </p>
             <p className="text-sm text-[28px]" style={{color: 'rgba(255, 255, 255, 0.8)'}}>
               Use our developer features and start building in the open with us.
