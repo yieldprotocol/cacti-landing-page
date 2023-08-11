@@ -65,21 +65,13 @@ export default function Home() {
         {/* Panel 3 */}
         <div
           className="flex w-full flex-col items-center justify-center mx-auto bg-fade-black-to-transparent h-[40vh] text-primary"
-          // style={{
-          //   height: "40vh",
-          //   color: "rgba(211, 232, 186, 1)",
-          //   background: `linear-gradient(to bottom right, #031016 0%, #031016 33%, rgba(3, 16, 22, 0.00) 80%) bottom right / 50% 50% no-repeat, 
-          // linear-gradient(to bottom left, #031016 0%, #031016 33%, rgba(3, 16, 22, 0.00) 80%) bottom left / 50% 50% no-repeat, 
-          // linear-gradient(to top left, #031016 0%, #031016 33%, rgba(3, 16, 22, 0.00) 80%) top left / 50% 50% no-repeat, 
-          // linear-gradient(to top right, #031016 0%, #031016 33%, rgba(3, 16, 22, 0.00) 80%) top right / 50% 50% no-repeat`,
-          // }}
         >
           <p className="text-5xl">Trade Assets. Retrieve Data.</p>
           <p className="text-5xl">Interact with Smart Contracts.</p>
           <div>
             <p
-              className="text-sm"
-              style={{ color: "rgba(255, 255, 255, 0.8)" }}
+              className="text-sm text-white/80"
+              // style={{ color: "rgba(255, 255, 255, 0.8)" }}
             >
               The groundbreaking Cacti web-interface is in alpha development,
               with many protocols already integrated, but more are on the way.
@@ -113,26 +105,14 @@ export default function Home() {
         {/* Panel 4 */}
         <div
           className="flex flex-col items-center justify-center mx-auto w-full bg-fade-black-to-transparent h-[40vh] text-primary "
-          // style={{
-          //   height: "40vh",
-          //   color: "rgba(211, 232, 186, 1)",
-          //   background: `linear-gradient(to bottom right, #031016 0%, #031016 33%, rgba(3, 16, 22, 0.00) 80%) bottom right / 50% 50% no-repeat, 
-          //   linear-gradient(to bottom left, #031016 0%, #031016 33%, rgba(3, 16, 22, 0.00) 80%) bottom left / 50% 50% no-repeat, 
-          //   linear-gradient(to top left, #031016 0%, #031016 33%, rgba(3, 16, 22, 0.00) 80%) top left / 50% 50% no-repeat, 
-          //   linear-gradient(to top right, #031016 0%, #031016 33%, rgba(3, 16, 22, 0.00) 80%) top right / 50% 50% no-repeat`,
-          // }}
         >
           <p className="text-5xl mb-5">Opensource and built in Public</p>
           <div className="text-center flex flex-col">
-            <p
-              className="text-sm text-[28px] mb-3"
-              style={{ color: "rgba(255, 255, 255, 0.8)" }}
-            >
+            <p className="text-sm text-[28px] mb-3 text-white/70">
               We&apos;ve released Cacti under an AGPL license.
             </p>
             <p
-              className="text-sm text-[28px]"
-              style={{ color: "rgba(255, 255, 255, 0.8)" }}
+              className="text-sm text-[28px] text-white/80"
             >
               Use our developer features and start building in the open with us.
             </p>
@@ -226,15 +206,7 @@ export default function Home() {
 
         {/* Panel 6 */}
         <div
-          className="flex flex-col items-center justify-center mx-auto h-full"
-          style={{
-            height: "40vh",
-            color: "rgba(211, 232, 186, 1)",
-            background: `linear-gradient(to bottom right, #031016 0%, #031016 33%, rgba(3, 16, 22, 0.00) 70%) bottom right / 50% 50% no-repeat, 
-            linear-gradient(to bottom left, #031016 0%, #031016 33%, rgba(3, 16, 22, 0.00) 70%) bottom left / 50% 50% no-repeat, 
-            linear-gradient(to top left, #031016 0%, #031016 33%, rgba(3, 16, 22, 0.00) 70%) top left / 50% 50% no-repeat, 
-            linear-gradient(to top right, #031016 0%, #031016 33%, rgba(3, 16, 22, 0.00) 70%) top right / 50% 50% no-repeat`,
-          }}
+          className="flex flex-col items-center justify-center mx-auto w-full bg-fade-black-to-transparent h-[40vh] text-primary"
         >
           <p className="text-5xl mb-5">Get Access and Build with us.</p>
           <div className="text-center flex flex-col">
