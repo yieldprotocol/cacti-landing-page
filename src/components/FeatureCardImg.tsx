@@ -8,7 +8,7 @@ interface CardProps {
 
 const styles = {
   card: {
-    width: '100%', // Use percentage value to make it responsive
+    width: '60%', // Use percentage value to make it responsive
     height: 'auto', // Allow the height to adjust based on content
     borderRadius: '16px',
     backgroundColor: 'rgba(3, 16, 22, 1)',
@@ -17,7 +17,7 @@ const styles = {
   },
   img: {
     borderRadius: '8px',
-    width: '100%', // Use percentage value to make it responsive
+    width: '50%', // Use percentage value to make it responsive
     height: 'auto', // Allow the height to adjust based on the width
   },
   text: {
@@ -34,13 +34,15 @@ const styles = {
 
 const Card = ({ header, subHeader, imagePath }: CardProps) => {
   return (
-    <div className="w-full max-w-md rounded-lg shadow-md flex flex-col justify-center text-left mx-3" style={styles.card}>
-      <h2 className="text-xl font-bold" style={styles.text.header}>
-        {header}
-      </h2>
-      <p className="text-gray-600" style={styles.text.subHeader}>
-        {subHeader}
-      </p>
+    <div className="rounded-lg shadow-md flex justify-center text-left mx-auto my-5" style={styles.card}>
+      <div className="flex flex-col">
+        <h2 className="text-xl font-bold" style={styles.text.header}>
+          {header}
+        </h2>
+        <p className="text-gray-600" style={styles.text.subHeader}>
+          {subHeader}
+        </p>
+      </div>
       <img src={imagePath} alt="Card Image" className="mt-4" style={styles.img} />
     </div>
   );
