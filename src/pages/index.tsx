@@ -49,10 +49,7 @@ export default function Home() {
         </div>
 
         {/* Panel 2 */}
-        <div
-          className="flex flex-col items-center justify-center container mx-auto h-full"
-          style={{ height: "80vh" }}
-        >
+        <div className="flex flex-col items-center justify-center container mx-auto h-[80vh]">
           <Image
             src="/screenshots/cacti-screen-swap.png"
             width="500"
@@ -63,9 +60,7 @@ export default function Home() {
         </div>
 
         {/* Panel 3 */}
-        <div
-          className="flex w-full flex-col items-center justify-center mx-auto bg-fade-black-to-transparent h-[40vh] text-primary"
-        >
+        <div className="flex w-full flex-col items-center justify-center mx-auto bg-fade-black-to-transparent h-[40vh] text-primary">
           <p className="text-5xl">Trade Assets. Retrieve Data.</p>
           <p className="text-5xl">Interact with Smart Contracts.</p>
           <div>
@@ -103,17 +98,13 @@ export default function Home() {
         </div>
 
         {/* Panel 4 */}
-        <div
-          className="flex flex-col items-center justify-center mx-auto w-full bg-fade-black-to-transparent h-[40vh] text-primary "
-        >
+        <div className="flex flex-col items-center justify-center mx-auto w-full bg-fade-black-to-transparent h-[40vh] text-primary ">
           <p className="text-5xl mb-5">Opensource and built in Public</p>
           <div className="text-center flex flex-col">
             <p className="text-sm text-[28px] mb-3 text-white/70">
               We&apos;ve released Cacti under an AGPL license.
             </p>
-            <p
-              className="text-sm text-[28px] text-white/80"
-            >
+            <p className="text-sm text-[28px] text-white/80">
               Use our developer features and start building in the open with us.
             </p>
           </div>
@@ -205,9 +196,7 @@ export default function Home() {
         </div>
 
         {/* Panel 6 */}
-        <div
-          className="flex flex-col items-center justify-center mx-auto w-full bg-fade-black-to-transparent h-[40vh] text-primary"
-        >
+        <div className="flex flex-col items-center justify-center mx-auto w-full bg-fade-black-to-transparent h-[40vh] text-primary">
           <p className="text-5xl mb-5">Get Access and Build with us.</p>
           <div className="text-center flex flex-col">
             {/* <p className="text-sm text-[28px] mb-3" style={{color: 'rgba(255, 255, 255, 0.8)'}}>

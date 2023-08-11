@@ -1,12 +1,7 @@
-const styles = {
-    footer: {
-        backgroundColor: 'rgba(46, 140, 135, 0.1)'
-    }
-}
 
 const CactiFooter = () => {
   return (
-    <footer style={styles.footer}>
+    <footer className='bg-[#2e8c87] bg-opacity-10'>
         <div className="container mx-auto max-w-full">
             <div className="flex justify-between mx-10 py-10">
                 <img src="/cactiAILogo.svg" alt="Cacti Logo" />
