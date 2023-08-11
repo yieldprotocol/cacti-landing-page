@@ -17,7 +17,7 @@ export default function Home() {
 
       </header>
       <main
-        className={`flex max-h-screen flex-col items-center overflow-scroll ${robotoMono.className} bg-[url(/cactiBackgroundPattern.svg)] bg-repeat`}
+        className={`flex max-h-screen flex-col items-center overflow-scroll ${robotoMono.className} bg-cacti-dark-blue`}
         
       >
 
@@ -43,14 +43,14 @@ export default function Home() {
          
 
           <div className="flex items-center text-center mx-auto">
-            <h1 className="text-5xl">Cacti🌵</h1>
+            <h1 className="text-5xl">🌵CACTI🌵</h1>
           </div>
 
           <div className="text-md md:text-[22px] mt-5 text-center">
             Interact with Web3 Protocols through Natural Language
           </div>
-          <div className="text-sm md:text-[16px] my-5 text-center">
-            Powered by OpenAI
+          <div className="flex items-center justify-center text-sm md:text-[16px] my-5 text-center">
+            Built by Yield&nbsp; <img src={'/icons/yield-logo-white.svg'} alt="icon" className="icon w-[16px]" />. Powered by OpenAI.
           </div>
 
           <div className="flex items-center w-full">
@@ -71,7 +71,7 @@ export default function Home() {
         </div>
 
         {/* Panel 3 */}
-        <div className="flex flex-col items-center justify-center mx-auto my-12 px-3 md:px-0 bg-fade-black-to-transparent min-h-[40vh] text-primary" style={{ 
+        <div className="flex flex-col items-center justify-center mx-auto mt-12 mb-1 px-3 md:px-0 bg-fade-black-to-transparent min-h-[40vh] text-primary" style={{ 
           
           // color: 'rgba(211, 232, 186, 1)', 
            }}>
@@ -83,7 +83,7 @@ export default function Home() {
         </div>
 
         {/* Panel 2 */}
-        <div className="flex flex-col items-center justify-center container mx-auto h-full w-5/6 md:w-2/4" style={{}}>
+        <div className="flex flex-col items-center justify-center container mx-auto h-full w-5/6 md:w-2/4 border border-cacti-green rounded-md py-1 mb-10" style={{}}>
             <video controls height="auto">
               <source src="/videos/yieldVideoHighRes.mp4" type="video/mp4" />
               Your browser does not support the video tag.
