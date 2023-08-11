@@ -13,7 +13,7 @@ const CactiFooter = () => {
                     <h1 className="text-2xl">🌵CACTI🌵</h1>
                 </div>
                 <div className="flex items-center justify-center">
-                    Built by Yield&nbsp; <img src={'/icons/yield-logo-white.svg'} alt="icon" className="icon w-[16px]" />
+                    Built by&nbsp;<a href="https://yieldprotocol.com/" target="_blank" rel="noreferrer" className="underline">Yield</a>&nbsp; <img src={'/icons/yield-logo-white.svg'} alt="icon" className="icon w-[16px]" />
                 </div>
             </div>
             

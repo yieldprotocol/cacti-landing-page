@@ -50,7 +50,7 @@ export default function Home() {
             Interact with Web3 Protocols through Natural Language
           </div>
           <div className="flex items-center justify-center text-sm md:text-[16px] my-5 text-center">
-            Built by Yield&nbsp; <img src={'/icons/yield-logo-white.svg'} alt="icon" className="icon w-[16px]" />. Powered by OpenAI.
+            Built by&nbsp;<a href="https://yieldprotocol.com/" target="_blank" rel="noreferrer" className="underline">Yield</a>&nbsp;<img src={'/icons/yield-logo-white.svg'} alt="icon" className="icon w-[16px]" />. Powered by OpenAI.
           </div>
 
           <div className="flex items-center w-full">
