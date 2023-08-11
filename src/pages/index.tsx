@@ -17,11 +17,8 @@ export default function Home() {
 
       </header>
       <main
-        className={`flex max-h-screen flex-col items-center overflow-scroll ${robotoMono.className}`}
-        style={{
-          backgroundImage: `url(/cactiBackgroundPattern.svg)`,
-          backgroundRepeat: 'repeat',
-        }}
+        className={`flex max-h-screen flex-col items-center overflow-scroll ${robotoMono.className} bg-[url(/cactiBackgroundPattern.svg)] bg-repeat`}
+        
       >
 
         {/* Top Panel */}
@@ -49,8 +46,11 @@ export default function Home() {
             <h1 className="text-5xl">Cacti🌵</h1>
           </div>
 
-          <div className="text-md md:text-[22px] my-5 text-center">
-            Interact with Web3 Protocols through Natural Language powered by OpenAI
+          <div className="text-md md:text-[22px] mt-5 text-center">
+            Interact with Web3 Protocols through Natural Language
+          </div>
+          <div className="text-sm md:text-[16px] my-5 text-center">
+            Powered by OpenAI
           </div>
 
           <div className="flex items-center w-full">
@@ -59,9 +59,11 @@ export default function Home() {
             
           </div>
           <div className="flex items-center my-3">
-            <button className="border border-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mx-auto">
-              Show me the code 💻
-            </button>
+            <a href="https://github.com/yieldprotocol/cacti-backend" target="_blank" rel="noopener noreferrer" className="mx-auto">
+              <button className="border border-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mx-auto">
+                Show me the code 💻
+              </button>
+            </a>
           </div>
 
         </div>
@@ -69,16 +71,13 @@ export default function Home() {
         </div>
 
         {/* Panel 3 */}
-        <div className="flex flex-col items-center justify-center mx-auto my-12 h-full px-3 md:px-0" style={{ 
-          height: '40vh', 
-          color: 'rgba(211, 232, 186, 1)', 
-          background: `linear-gradient(to bottom right, #031016 0%, #031016 33%, rgba(3, 16, 22, 0.00) 80%) bottom right / 50% 50% no-repeat, 
-          linear-gradient(to bottom left, #031016 0%, #031016 33%, rgba(3, 16, 22, 0.00) 80%) bottom left / 50% 50% no-repeat, 
-          linear-gradient(to top left, #031016 0%, #031016 33%, rgba(3, 16, 22, 0.00) 80%) top left / 50% 50% no-repeat, 
-          linear-gradient(to top right, #031016 0%, #031016 33%, rgba(3, 16, 22, 0.00) 80%) top right / 50% 50% no-repeat` }}>
+        <div className="flex flex-col items-center justify-center mx-auto my-12 px-3 md:px-0 bg-fade-black-to-transparent min-h-[40vh] text-primary" style={{ 
+          
+          // color: 'rgba(211, 232, 186, 1)', 
+           }}>
           <p className="text-lg md:text-5xl">Trade Assets. Retrieve Data.</p>
           <p className="text-lg md:text-5xl">Interact with Smart Contracts.</p>
-          <div>
+          <div className="text-center md:text-left">
             <p className="text-sm" style={{color: 'rgba(255, 255, 255, 0.8)'}}>The groundbreaking Cacti web-interface is in alpha development, with many protocols already integrated, and more on the way.</p>
           </div>
         </div>
@@ -86,7 +85,7 @@ export default function Home() {
         {/* Panel 2 */}
         <div className="flex flex-col items-center justify-center container mx-auto h-full w-5/6 md:w-2/4" style={{}}>
             <video controls height="auto">
-              <source src="/videos/yieldCacti.mp4" type="video/mp4" />
+              <source src="/videos/yieldVideoHighRes.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
         </div>
@@ -115,11 +114,8 @@ export default function Home() {
         </div>
 
         {/* Panel 4 */}
-        <div className="flex flex-col items-center justify-center mx-auto h-full" style={{ height: '40vh', color: 'rgba(211, 232, 186, 1)', background: `linear-gradient(to bottom right, #031016 0%, #031016 33%, rgba(3, 16, 22, 0.00) 80%) bottom right / 50% 50% no-repeat, 
-            linear-gradient(to bottom left, #031016 0%, #031016 33%, rgba(3, 16, 22, 0.00) 80%) bottom left / 50% 50% no-repeat, 
-            linear-gradient(to top left, #031016 0%, #031016 33%, rgba(3, 16, 22, 0.00) 80%) top left / 50% 50% no-repeat, 
-            linear-gradient(to top right, #031016 0%, #031016 33%, rgba(3, 16, 22, 0.00) 80%) top right / 50% 50% no-repeat` }}>
-          <p className="text-lg md:text-5xl mb-5">Opensource and built in Public</p>
+        <div className="flex flex-col items-center justify-center mx-auto min-h-[40vh] text-primary bg-fade-black-to-transparent">
+          <p className="text-lg md:text-5xl mb-5">Open source and built in Public</p>
           <div className="text-center flex flex-col">
             <p className="text-sm text-[28px] mb-3" style={{color: 'rgba(255, 255, 255, 0.8)'}}>
               We&apos;ve released Cacti under an AGPL license.
@@ -136,22 +132,22 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
           
             <div className="p-0">
-              <FeatureCardText header="Natural Language Interactions" subHeader="Trade assets, manage NFTs, and more through simple text requests." />
+              <FeatureCardText header="Natural Language Interactions" subHeader="Allow users to trade assets, manage NFTs, and more through simple text requests and responses." />
             </div>
             <div className="p-0">
-              <FeatureCardText header="Easy Integrations" subHeader="Work with Javascript on the frontend or Python on the backend." />
+              <FeatureCardText header="Easy Integrations" subHeader="Seamlessly add web3 actions with Javascript on the frontend or Python on the backend." />
             </div>
             <div className="p-0">
-              <FeatureCardText header="ReactJS Component Framework" subHeader="Integrate UI with minimal frontend knowledge." />
+              <FeatureCardText header="ReactJS Component Framework" subHeader="Our library lets you build your UI quickly with minimal frontend knowledge." />
             </div>
             <div className="p-0">
-              <FeatureCardText header="Wallet based Authentication" subHeader="Ensure secure identification with web3 wallets." />
+              <FeatureCardText header="Wallet based Authentication" subHeader="Ensure secure identification and transactions with user's wallets, powered by RainbowKit" />
             </div>
             <div className="p-0">
               <FeatureCardText header="Flexible Evaluation Framework" subHeader="Test the performance of widgets with hard-coded testing, automatic evaluations, or manually annotated CSV samples." />
             </div>
             <div className="p-0">
-              <FeatureCardText header="Chat Context Management" subHeader="Build context from previous interactions for improved user experiences." />
+              <FeatureCardText header="Chat Context Management" subHeader="Build context from previous interactions for improved UX, and revisit past conversations with 1 click." />
             </div>
             
             
@@ -159,16 +155,15 @@ export default function Home() {
         </div>
 
          {/* Panel 6 */}
-         <div className="flex flex-col items-center justify-center mx-auto h-full" style={{ height: '40vh', color: 'rgba(211, 232, 186, 1)',background: `linear-gradient(to bottom right, #031016 0%, #031016 33%, rgba(3, 16, 22, 0.00) 70%) bottom right / 50% 50% no-repeat, 
-            linear-gradient(to bottom left, #031016 0%, #031016 33%, rgba(3, 16, 22, 0.00) 70%) bottom left / 50% 50% no-repeat, 
-            linear-gradient(to top left, #031016 0%, #031016 33%, rgba(3, 16, 22, 0.00) 70%) top left / 50% 50% no-repeat, 
-            linear-gradient(to top right, #031016 0%, #031016 33%, rgba(3, 16, 22, 0.00) 70%) top right / 50% 50% no-repeat` }}>
+         <div className="flex flex-col items-center justify-center mx-auto text-primary bg-fade-black-to-transparent min-h-[40vh] w-5/6"  >
           <p className="text-lg md:text-5xl mb-5">Come build with us</p>
           <div className="text-center flex flex-col">
             <div className="flex items-center">
-            <button className="border border-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mx-auto">
-              Show me the code 💻
-            </button>
+            <a href="https://github.com/yieldprotocol/cacti-backend" target="_blank" rel="noopener noreferrer">
+              <button className="border border-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mx-auto">
+                Show me the code 💻
+              </button>
+            </a>
             </div>
           </div>
         </div>

@@ -25,10 +25,12 @@ function MailchimpForm() {
 
     // Show success state briefly
     setSuccess(true);
+    setLoading(false); // Stop loading state
+
     setTimeout(() => {
       setSuccess(false);
-      setLoading(false); // Stop loading state
-    }, 1000); // Delay for 1 second to show checkmark
+      setEmail('');
+    }, 2000); // Delay for 1 second to show checkmark
   };
 
   const isValidEmailFormat = (email: string) => {
@@ -42,11 +44,15 @@ function MailchimpForm() {
       color: 'black'
     },
     submitButton: {
-      backgroundColor: 'green',
-      color: 'white'
+      // backgroundColor: 'rgb(46, 140, 135)',
+      color: 'white',
+      marginTop: '1px'
     },
     errorMessage: {
       color: 'red'
+    },
+    spinner: {
+
     }
   }
 
@@ -59,6 +65,12 @@ function MailchimpForm() {
         },
         body: JSON.stringify({ email }),
       })
+
+      if (!response.ok) {
+        console.log('Error from MailChimp:', response.statusText);
+        return;
+      }
+
       const data = await response.json()
       console.log('response from MC', data)
     } catch (error) {
@@ -67,7 +79,7 @@ function MailchimpForm() {
   }
 
   return (
-    <div className="flex flex-col md:flex-row sm:flex-col items-start mx-auto w-full md:w-3/5">
+    <div className="flex flex-col md:flex-row sm:flex-col items-start mx-auto w-full md:w-4/5">
       <div className="mc-field-group flex-grow mx-auto w-full md:mr-5 mb-3 md:mb-0">
         <input
           type="email"
@@ -84,10 +96,10 @@ function MailchimpForm() {
       <button
         disabled={loading} // Disable button while loading
         onClick={handleSubmit}
-        className="button bg-green-500 hover:bg-green-700 text-white py-2 px-4 rounded whitespace-nowrap mx-auto"
-        style={{marginTop: '1px'}}
+        className="button bg-cacti-green hover:bg-green-700 py-2 px-4 rounded whitespace-nowrap mx-auto min-w-[215px]"
+        style={styles.submitButton}
       >
-        {loading ? <div className="loader"></div> : success ? "✓" : "Keep me in the loop"}
+        {loading ? <div className="loading-spinner mx-auto"></div> : success ? "Subscribed!" : "Keep me in the loop"}
       </button>
     </div>
   );
