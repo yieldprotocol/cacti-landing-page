@@ -25,8 +25,7 @@ export default function Home() {
       >
 
         {/* Top Panel */}
-        <div className="flex flex-col items-center justify-center mt-16 container mx-auto w-full mx-0 rounded-xl" style={{ 
-          // height: '', 
+        <div className="flex flex-col items-center justify-center mt-16 container mx-auto w-full mx-0 rounded-xl sm:min-h-[80h] lg:min-h-[50vh] xl:min-h-[70vh]" style={{ 
           background: `linear-gradient(
             70deg,
             hsl(199deg 76% 5%) 0%,
@@ -41,17 +40,16 @@ export default function Home() {
             hsl(151deg 100% 17%) 100%
           )`,
           border: '1px solid rgba(46, 140, 135, 1)',
-          minHeight: '50vh'
         }}>
 
-        <div className="flex flex-col my-5 mt-12">
+        <div className="flex flex-col my-5 mt-12 px-3 md:px-0">
          
 
           <div className="flex items-center text-center mx-auto">
-            <h1 className="text-5xl">Cacti 🌵</h1>
+            <h1 className="text-5xl">Cacti🌵</h1>
           </div>
 
-          <div className="text-[28px] my-5">
+          <div className="text-md md:text-[22px] my-5 text-center">
             Interact with Web3 Protocols through Natural Language powered by OpenAI
           </div>
 
@@ -71,33 +69,31 @@ export default function Home() {
         </div>
 
         {/* Panel 3 */}
-        <div className="flex flex-col items-center justify-center mx-auto my-12 h-full" style={{ 
+        <div className="flex flex-col items-center justify-center mx-auto my-12 h-full px-3 md:px-0" style={{ 
           height: '40vh', 
           color: 'rgba(211, 232, 186, 1)', 
           background: `linear-gradient(to bottom right, #031016 0%, #031016 33%, rgba(3, 16, 22, 0.00) 80%) bottom right / 50% 50% no-repeat, 
           linear-gradient(to bottom left, #031016 0%, #031016 33%, rgba(3, 16, 22, 0.00) 80%) bottom left / 50% 50% no-repeat, 
           linear-gradient(to top left, #031016 0%, #031016 33%, rgba(3, 16, 22, 0.00) 80%) top left / 50% 50% no-repeat, 
           linear-gradient(to top right, #031016 0%, #031016 33%, rgba(3, 16, 22, 0.00) 80%) top right / 50% 50% no-repeat` }}>
-          <p className="text-5xl">Trade Assets. Retrieve Data.</p>
-          <p className="text-5xl">Interact with Smart Contracts.</p>
+          <p className="text-lg md:text-5xl">Trade Assets. Retrieve Data.</p>
+          <p className="text-lg md:text-5xl">Interact with Smart Contracts.</p>
           <div>
             <p className="text-sm" style={{color: 'rgba(255, 255, 255, 0.8)'}}>The groundbreaking Cacti web-interface is in alpha development, with many protocols already integrated, and more on the way.</p>
           </div>
         </div>
 
         {/* Panel 2 */}
-        <div className="flex flex-col items-center justify-center container mx-auto h-full" style={{}}>
-          <div className="flex flex-col items-center justify-center container mx-auto h-full" style={{}}>
-            <video controls width="50%" height="auto">
+        <div className="flex flex-col items-center justify-center container mx-auto h-full w-5/6 md:w-2/4" style={{}}>
+            <video controls height="auto">
               <source src="/videos/yieldCacti.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
-          </div>
         </div>
 
 
         {/* features */}
-        <div className="flex flex-col mx-auto h-full" style={{ height: '80vh' }}>
+        <div className="flex flex-col mx-auto h-full" style={{  }}>
 
           <div>
             <FeatureCardImg 
@@ -123,7 +119,7 @@ export default function Home() {
             linear-gradient(to bottom left, #031016 0%, #031016 33%, rgba(3, 16, 22, 0.00) 80%) bottom left / 50% 50% no-repeat, 
             linear-gradient(to top left, #031016 0%, #031016 33%, rgba(3, 16, 22, 0.00) 80%) top left / 50% 50% no-repeat, 
             linear-gradient(to top right, #031016 0%, #031016 33%, rgba(3, 16, 22, 0.00) 80%) top right / 50% 50% no-repeat` }}>
-          <p className="text-5xl mb-5">Opensource and built in Public</p>
+          <p className="text-lg md:text-5xl mb-5">Opensource and built in Public</p>
           <div className="text-center flex flex-col">
             <p className="text-sm text-[28px] mb-3" style={{color: 'rgba(255, 255, 255, 0.8)'}}>
               We&apos;ve released Cacti under an AGPL license.
@@ -139,22 +135,22 @@ export default function Home() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
           
-            <div className="p-4">
+            <div className="p-0">
               <FeatureCardText header="Natural Language Interactions" subHeader="Trade assets, manage NFTs, and more through simple text requests." />
             </div>
-            <div className="p-4">
+            <div className="p-0">
               <FeatureCardText header="Easy Integrations" subHeader="Work with Javascript on the frontend or Python on the backend." />
             </div>
-            <div className="p-4">
+            <div className="p-0">
               <FeatureCardText header="ReactJS Component Framework" subHeader="Integrate UI with minimal frontend knowledge." />
             </div>
-            <div className="p-4">
+            <div className="p-0">
               <FeatureCardText header="Wallet based Authentication" subHeader="Ensure secure identification with web3 wallets." />
             </div>
-            <div className="p-4">
+            <div className="p-0">
               <FeatureCardText header="Flexible Evaluation Framework" subHeader="Test the performance of widgets with hard-coded testing, automatic evaluations, or manually annotated CSV samples." />
             </div>
-            <div className="p-4">
+            <div className="p-0">
               <FeatureCardText header="Chat Context Management" subHeader="Build context from previous interactions for improved user experiences." />
             </div>
             
@@ -167,23 +163,20 @@ export default function Home() {
             linear-gradient(to bottom left, #031016 0%, #031016 33%, rgba(3, 16, 22, 0.00) 70%) bottom left / 50% 50% no-repeat, 
             linear-gradient(to top left, #031016 0%, #031016 33%, rgba(3, 16, 22, 0.00) 70%) top left / 50% 50% no-repeat, 
             linear-gradient(to top right, #031016 0%, #031016 33%, rgba(3, 16, 22, 0.00) 70%) top right / 50% 50% no-repeat` }}>
-          <p className="text-5xl mb-5">Get Access and Build with us.</p>
+          <p className="text-lg md:text-5xl mb-5">Come build with us</p>
           <div className="text-center flex flex-col">
-            {/* <p className="text-sm text-[28px] mb-3" style={{color: 'rgba(255, 255, 255, 0.8)'}}>
-              We've released Cacti under an AGPL license.
-            </p> */}
             <div className="flex items-center">
-              <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mx-auto">
-                Request Early Developer Access
-              </button>
+            <button className="border border-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mx-auto">
+              Show me the code 💻
+            </button>
             </div>
           </div>
         </div>
         
+      {/* FOOTER */}
+        <CactiFooter />
       </main>
 
-      {/* FOOTER */}
-      <CactiFooter />
 
     </div>
   )

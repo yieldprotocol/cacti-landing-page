@@ -21,7 +21,7 @@ function MailchimpForm() {
     setIsValidEmail(true);
 
     // Submit email to MailChimp
-    // await submitToMailChimp();
+    await submitToMailChimp();
 
     // Show success state briefly
     setSuccess(true);
@@ -67,32 +67,29 @@ function MailchimpForm() {
   }
 
   return (
-    <div className="flex items-start mx-auto w-2/4">
-      <div className="mc-field-group flex-grow mr-5">
-        {/* <label htmlFor="mce-EMAIL" className="block text-sm font-medium text-white-700">Email Address <span className="text-red-600">*</span></label> */}
+    <div className="flex flex-col md:flex-row sm:flex-col items-start mx-auto w-full md:w-3/5">
+      <div className="mc-field-group flex-grow mx-auto w-full md:mr-5 mb-3 md:mb-0">
         <input
           type="email"
           name="EMAIL"
-          className={`required email w-full p-2 text-white-700 bg-transparent border focus:outline-none ${!isValidEmail ? 'border-red-500' : 'border-gray-300'} rounded-md`}
+          className={`required email w-full p-2 text-black bg-white border focus:outline-none ${!isValidEmail ? 'border-red-500' : 'border-gray-300'} rounded-md`}
           id="mce-EMAIL"
           required
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder='Email address'
         />
-        {/* {!isValidEmail && <span className="text-red-500 text-xs">Please enter a valid email address.</span>} */}
         <span className="text-red-500 text-xs">{!isValidEmail && 'Please enter a valid email address.'}</span>
       </div>
       <button
         disabled={loading} // Disable button while loading
         onClick={handleSubmit}
-        className="button bg-green-500 hover:bg-green-700 text-white py-2 px-4 rounded whitespace-nowrap"
+        className="button bg-green-500 hover:bg-green-700 text-white py-2 px-4 rounded whitespace-nowrap mx-auto"
         style={{marginTop: '1px'}}
       >
         {loading ? <div className="loader"></div> : success ? "✓" : "Keep me in the loop"}
       </button>
     </div>
-
   );
 }
 
