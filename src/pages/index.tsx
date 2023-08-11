@@ -75,9 +75,9 @@ export default function Home() {
           
           // color: 'rgba(211, 232, 186, 1)', 
            }}>
-          <p className="text-lg md:text-5xl">Trade Assets. Retrieve Data.</p>
-          <p className="text-lg md:text-5xl">Interact with Smart Contracts.</p>
-          <div className="text-center md:text-left">
+          <p className="text-lg md:text-3xl lg:text-5xl">Trade Assets. Retrieve Data.</p>
+          <p className="text-lg md:text-3xl lg:text-5xl">Interact with Smart Contracts.</p>
+          <div className="text-center lg:text-left">
             <p className="text-sm" style={{color: 'rgba(255, 255, 255, 0.8)'}}>The groundbreaking Cacti web-interface is in alpha development, with many protocols already integrated, and more on the way.</p>
           </div>
         </div>
@@ -115,7 +115,7 @@ export default function Home() {
 
         {/* Panel 4 */}
         <div className="flex flex-col items-center justify-center mx-auto min-h-[40vh] text-primary bg-fade-black-to-transparent">
-          <p className="text-lg md:text-5xl mb-5">Open source and built in Public</p>
+          <p className="text-lg md:text-3xl lg:text-5xl mb-5">Open source and built in Public</p>
           <div className="text-center flex flex-col">
             <p className="text-sm text-[28px] mb-3" style={{color: 'rgba(255, 255, 255, 0.8)'}}>
               We&apos;ve released Cacti under an AGPL license.
@@ -129,7 +129,7 @@ export default function Home() {
         {/* Feature cards - no images */}
         <div className="container mx-auto px-12 py-8">
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4">
           
             <div className="p-0">
               <FeatureCardText header="Natural Language Interactions" subHeader="Allow users to trade assets, manage NFTs, and more through simple text requests and responses." />
