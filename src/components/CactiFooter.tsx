@@ -1,7 +1,7 @@
 
 const CactiFooter = () => {
   return (
-    <footer className='bg-[#2e8c87] bg-opacity-10'>
+    <footer className='bg-[#2e8c87] bg-opacity-50'>
         <div className="container mx-auto max-w-full">
             <div className="flex justify-between mx-10 py-10">
                 <img src="/cactiAILogo.svg" alt="Cacti Logo" />
