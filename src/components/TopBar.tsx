@@ -1,30 +1,38 @@
-import React from 'react';
+import {CSSProperties} from 'react';
 
-const TopBar = () => {
-  return (
-    <div style={styles.topBar}>
-      <span style={styles.text}>Build with us in public.</span>
-      <span style={styles.text}>Early Access to our Alpha Product Available for Developers</span>
-      <span style={styles.text}>Build with us in public.</span>
-    </div>
-  );
-};
-
-const styles = {
+const styles: { [key: string]: CSSProperties } = {
   topBar: {
-    background: 'linear-gradient(270deg, #2E8C87 0%, #D3E8BA 53.13%, #2E8C87 100%)',
+    backgroundColor: 'rgba(46, 140, 135, 1)',
     color: '#fff',
     height: '50px',
     display: 'flex',
-    justifyContent: 'space-around',
+    justifyContent: 'space-between',
     alignItems: 'center',
     padding: '0 20px',
     width: '100%',
+    position: 'fixed',
   },
   text: {
     fontSize: '14px',
-    color: 'rgba(0, 0, 0, 0.80)',
+    color: 'white',
+    fontWeight: 700,
   },
+};
+
+const TopBar = () => {
+  return (
+    <div style={styles.topBar} className="z-50">
+      <span style={styles.text}>Cacti🌵</span>
+      <div className="flex">
+          <a href="https://twitter.com/yield" target="_blank" rel="noopener noreferrer">
+            <img src="/icons/twitter.svg" alt="Twitter" className="mr-3 text-white" />
+          </a>
+          <a href="https://discord.gg/zpEGe8m7Ea" target="_blank" rel="noopener noreferrer">
+            <img src="/icons/discord.svg" alt="Discord" />   
+          </a>
+      </div>
+    </div>
+  );
 };
 
 export default TopBar;

@@ -3,19 +3,34 @@ import React, { useState } from 'react';
 function MailchimpForm() {
   const [email, setEmail] = useState('');
   const [isValidEmail, setIsValidEmail] = useState(true);
+  const [loading, setLoading] = useState(false); // Track loading state
+  const [success, setSuccess] = useState(false); // Track success state
 
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (event: React.MouseEvent<HTMLButtonElement>) => {
+    event.preventDefault();
+    setLoading(true); // Start loading state
+
     // Validate email address
     if (!email || !isValidEmailFormat(email)) {
       setIsValidEmail(false);
-      event.preventDefault(); // Prevent form submission
+      setLoading(false); // Stop loading state
       return;
     }
 
     // Reset validation status
     setIsValidEmail(true);
 
-    // Allow form submission to proceed
+    // Submit email to MailChimp
+    await submitToMailChimp();
+
+    // Show success state briefly
+    setSuccess(true);
+    setLoading(false); // Stop loading state
+
+    setTimeout(() => {
+      setSuccess(false);
+      setEmail('');
+    }, 2000); // Delay for 1 second to show checkmark
   };
 
   const isValidEmailFormat = (email: string) => {
@@ -29,56 +44,63 @@ function MailchimpForm() {
       color: 'black'
     },
     submitButton: {
-      backgroundColor: 'green',
-      color: 'white'
+      // backgroundColor: 'rgb(46, 140, 135)',
+      color: 'white',
+      marginTop: '1px'
     },
     errorMessage: {
       color: 'red'
+    },
+    spinner: {
+
+    }
+  }
+
+  const submitToMailChimp = async () => {
+    try {
+      const response = await fetch("/.netlify/functions/mailChimp", {
+        method: "POST",
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      })
+
+      if (!response.ok) {
+        console.log('Error from MailChimp:', response.statusText);
+        return;
+      }
+
+      const data = await response.json()
+      console.log('response from MC', data)
+    } catch (error) {
+      console.log('error from MC', error)
     }
   }
 
   return (
-    <div id="mc_embed_shell">
-      <div id="mc_embed_signup">
-        <form
-          action="https://yield.us8.list-manage.com/subscribe/post?u=ba7359e990d89455a1c9be0e2&amp;id=7030e0c3a4&amp;f_id=001f79e0f0"
-          method="post"
-          className="validate"
-          target="_self"
-          noValidate
-          onSubmit={handleSubmit} // Attach the handleSubmit function to the form submission event
-          style={styles.form}
-        >
-          <div id="mc_embed_signup_scroll">
-            <div className="indicates-required">
-              <span className="asterisk">*</span> indicates required
-            </div>
-            <div className="mc-field-group">
-              <label htmlFor="mce-EMAIL">Email Address <span className="asterisk">*</span></label>
-              <input
-                type="email"
-                name="EMAIL"
-                className={`required email ${!isValidEmail ? 'error' : ''}`}
-                id="mce-EMAIL"
-                required
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
-              {!isValidEmail && <span className="error-message" style={styles.errorMessage}>Please enter a valid email address.</span>}
-            </div>
-            <div className="clear">
-              <input
-                type="submit"
-                name="subscribe"
-                id="mc-embedded-subscribe"
-                className="button"
-                value="Subscribe"
-                style={styles.submitButton}
-              />
-            </div>
-          </div>
-        </form>
+    <div className="flex flex-col md:flex-row sm:flex-col items-start mx-auto w-full md:w-4/5">
+      <div className="mc-field-group flex-grow mx-auto w-full md:mr-5 mb-3 md:mb-0">
+        <input
+          type="email"
+          name="EMAIL"
+          className={`required email w-full p-2 text-black bg-white border focus:outline-none ${!isValidEmail ? 'border-red-500' : 'border-gray-300'} rounded-md`}
+          id="mce-EMAIL"
+          required
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          placeholder='Email address'
+        />
+        <span className="text-red-500 text-xs">{!isValidEmail && 'Please enter a valid email address.'}</span>
       </div>
+      <button
+        disabled={loading} // Disable button while loading
+        onClick={handleSubmit}
+        className="button bg-cacti-green hover:bg-green-700 py-2 px-4 rounded whitespace-nowrap mx-auto min-w-[215px]"
+        style={styles.submitButton}
+      >
+        {loading ? <div className="loading-spinner mx-auto"></div> : success ? "Subscribed!" : "Keep me in the loop"}
+      </button>
     </div>
   );
 }
