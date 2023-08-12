@@ -34,10 +34,10 @@ const Card = ({ header, subHeader, imagePath }: CardProps) => {
   return (
     <div className="rounded-lg shadow-md flex flex-col md:flex-row justify-center text-left mx-auto my-5 w-5/6" style={styles.card}>
       <div className="flex flex-col w-full md:w-2/4 text-center md:text-left my-0 md:my-auto">
-        <h2 className="text-xl font-bold mt-0 mb-0" style={styles.text.header}>
+        <h2 className="text-xl font-bold mt-0 mb-0 text-primary" style={styles.text.header}>
           {header}
         </h2>
-        <p className="text-gray-600 mt-3" style={styles.text.subHeader}>
+        <p className="text-white-600 mt-3" style={styles.text.subHeader}>
           {subHeader}
         </p>
       </div>

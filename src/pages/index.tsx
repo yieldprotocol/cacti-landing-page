@@ -43,7 +43,7 @@ export default function Home() {
          
 
           <div className="flex items-center text-center mx-auto">
-            <h1 className="text-5xl">🌵CACTI🌵</h1>
+            <h1 className="text-5xl">🌵🌵🌵CACTI🌵🌵🌵</h1>
           </div>
 
           <div className="text-md md:text-[22px] mt-5 text-center">
