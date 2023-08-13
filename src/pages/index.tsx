@@ -22,7 +22,7 @@ export default function Home() {
       >
 
         {/* Top Panel */}
-        <div className="flex flex-col items-center justify-center mt-16 container mx-auto w-full mx-0 rounded-xl sm:min-h-[80h] lg:min-h-[50vh] xl:min-h-[70vh]" style={{ 
+        <div className="flex flex-col items-center justify-center mt-16 container mx-auto w-full mx-0 rounded-xl sm:min-h-[80h] lg:min-h-[50vh] xl:min-h-[50vh]" style={{ 
           background: `linear-gradient(
             70deg,
             hsl(199deg 76% 5%) 0%,
@@ -43,13 +43,13 @@ export default function Home() {
          
 
           <div className="flex items-center text-center mx-auto">
-            <h1 className="text-5xl">🌵🌵🌵CACTI🌵🌵🌵</h1>
+            <h1 className="text-4xl lg:text-6xl text-white">🌵🌵🌵CACTI🌵🌵🌵</h1>
           </div>
 
-          <div className="text-md md:text-[22px] mt-5 text-center">
+          <div className="text-md md:text-[22px] mt-5 text-center text-white">
             Interact with Web3 Protocols through Natural Language
           </div>
-          <div className="flex items-center justify-center text-sm md:text-[16px] my-5 text-center">
+          <div className="flex items-center justify-center text-sm md:text-[16px] my-5 text-center text-white">
             Built by&nbsp;<a href="https://yieldprotocol.com/" target="_blank" rel="noreferrer" className="underline">Yield</a>&nbsp;<img src={'/icons/yield-logo-white.svg'} alt="icon" className="icon w-[16px]" />. Powered by OpenAI.
           </div>
 
