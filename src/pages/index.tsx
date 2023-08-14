@@ -5,6 +5,7 @@ import FeatureCardImg from '@/components/FeatureCardImg'
 import FeatureCardText from '@/components/FeatureCardText'
 import CactiFooter from "@/components/CactiFooter"
 import MailchimpForm from "@/components/MailChimpForm"
+import ComingSoon from "@/components/ComingSoon"
 
 const inter = Inter({ subsets: ['latin'] })
 const robotoMono = Roboto_Mono({ subsets: ['latin'] })
@@ -12,7 +13,8 @@ const robotoMono = Roboto_Mono({ subsets: ['latin'] })
 export default function Home() {
   return (
     <div>
-      <header className={`${robotoMono.className}`}>
+      <ComingSoon />
+      {/* <header className={`${robotoMono.className}`}>
         <TopBar />
 
       </header>
@@ -22,7 +24,7 @@ export default function Home() {
       >
 
         {/* Top Panel */}
-        <div className="flex flex-col items-center justify-center mt-16 container mx-auto w-full mx-0 rounded-xl sm:min-h-[80h] lg:min-h-[50vh] xl:min-h-[70vh]" style={{ 
+        {/* <div className="flex flex-col items-center justify-center mt-16 container mx-auto w-full mx-0 rounded-xl sm:min-h-[80h] lg:min-h-[50vh] xl:min-h-[70vh]" style={{ 
           background: `linear-gradient(
             70deg,
             hsl(199deg 76% 5%) 0%,
@@ -37,9 +39,9 @@ export default function Home() {
             hsl(151deg 100% 17%) 100%
           )`,
           border: '1px solid rgba(46, 140, 135, 1)',
-        }}>
+        }}> */}
 
-        <div className="flex flex-col my-5 mt-12 px-3 md:px-0">
+        {/* <div className="flex flex-col my-5 mt-12 px-3 md:px-0">
          
 
           <div className="flex items-center text-center mx-auto">
@@ -68,10 +70,10 @@ export default function Home() {
 
         </div>
           
-        </div>
+        </div> */}
 
         {/* Panel 3 */}
-        <div className="flex flex-col items-center justify-center mx-auto my-12 px-3 md:px-0 bg-fade-black-to-transparent min-h-[40vh] text-primary" style={{ 
+        {/* <div className="flex flex-col items-center justify-center mx-auto my-12 px-3 md:px-0 bg-fade-black-to-transparent min-h-[40vh] text-primary" style={{ 
           
           // color: 'rgba(211, 232, 186, 1)', 
            }}>
@@ -80,19 +82,19 @@ export default function Home() {
           <div className="text-center lg:text-left">
             <p className="text-sm" style={{color: 'rgba(255, 255, 255, 0.8)'}}>The groundbreaking Cacti web-interface is in alpha development, with many protocols already integrated, and more on the way.</p>
           </div>
-        </div>
+        </div> */}
 
         {/* Panel 2 */}
-        <div className="flex flex-col items-center justify-center container mx-auto h-full w-5/6 md:w-2/4" style={{}}>
+        {/* <div className="flex flex-col items-center justify-center container mx-auto h-full w-5/6 md:w-2/4" style={{}}>
             <video controls height="auto">
               <source src="/videos/yieldVideoHighRes.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
-        </div>
+        </div> */}
 
 
         {/* features */}
-        <div className="flex flex-col mx-auto h-full" style={{  }}>
+        {/* <div className="flex flex-col mx-auto h-full" style={{  }}>
 
           <div>
             <FeatureCardImg 
@@ -111,10 +113,10 @@ export default function Home() {
           </div>
 
 
-        </div>
+        </div> */}
 
         {/* Panel 4 */}
-        <div className="flex flex-col items-center justify-center mx-auto min-h-[40vh] text-primary bg-fade-black-to-transparent">
+        {/* <div className="flex flex-col items-center justify-center mx-auto min-h-[40vh] text-primary bg-fade-black-to-transparent">
           <p className="text-lg md:text-3xl lg:text-5xl mb-5">Open source and built in Public</p>
           <div className="text-center flex flex-col">
             <p className="text-sm text-[28px] mb-3" style={{color: 'rgba(255, 255, 255, 0.8)'}}>
@@ -124,10 +126,10 @@ export default function Home() {
               Use our developer features and start building in the open with us.
             </p>
           </div>
-        </div>
+        </div> */}
 
         {/* Feature cards - no images */}
-        <div className="container mx-auto px-12 py-8">
+        {/* <div className="container mx-auto px-12 py-8">
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4">
           
@@ -152,10 +154,10 @@ export default function Home() {
             
             
           </div>
-        </div>
+        </div> */}
 
          {/* Panel 6 */}
-         <div className="flex flex-col items-center justify-center mx-auto text-primary bg-fade-black-to-transparent min-h-[40vh] w-5/6"  >
+         {/* <div className="flex flex-col items-center justify-center mx-auto text-primary bg-fade-black-to-transparent min-h-[40vh] w-5/6"  >
           <p className="text-lg md:text-5xl mb-5">Come build with us</p>
           <div className="text-center flex flex-col">
             <div className="flex items-center">
@@ -166,11 +168,11 @@ export default function Home() {
             </a>
             </div>
           </div>
-        </div>
+        </div> */}
         
       {/* FOOTER */}
-        <CactiFooter />
-      </main>
+        {/* <CactiFooter />
+      </main>  */}
 
 
     </div>
