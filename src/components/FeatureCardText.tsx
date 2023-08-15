@@ -31,10 +31,10 @@ const Card = ({ header, subHeader }: TextCardProps) => {
   return (
     <div className="rounded-lg shadow-md flex flex-col justify-center text-left mx-3" style={styles.card}>
       <div className="text-center">
-        <h2 className="text-lg font-bold" style={styles.text.header}>{header}</h2>
+        <h2 className="text-lg font-bold text-primary" style={styles.text.header}>{header}</h2>
       </div>
       <div style={styles.text.subHeader} className="text-center">
-        <p className="text-gray-600">{subHeader}</p>
+        <p className="text-white-600">{subHeader}</p>
 
       </div>
     </div>

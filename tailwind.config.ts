@@ -16,6 +16,7 @@ const config: Config = {
       colors: {
         primary: "rgba(211, 232, 186, 1)",
         'cacti-green': 'rgb(46, 140, 135)',
+        'cacti-dark-blue': '#031116'
       },
     },
   },

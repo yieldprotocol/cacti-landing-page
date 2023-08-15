@@ -1,15 +1,34 @@
 import TopBar from "@/components/TopBar"
-import { Inter, Roboto_Mono } from 'next/font/google'
+import { useRef, useEffect } from "react"
+import { Roboto_Mono } from 'next/font/google'
 import Image from 'next/image'
 import FeatureCardImg from '@/components/FeatureCardImg'
 import FeatureCardText from '@/components/FeatureCardText'
 import CactiFooter from "@/components/CactiFooter"
 import MailchimpForm from "@/components/MailChimpForm"
 
-const inter = Inter({ subsets: ['latin'] })
 const robotoMono = Roboto_Mono({ subsets: ['latin'] })
 
 export default function Home() {
+
+  const animationEl = useRef<HTMLSpanElement | null>(null);
+  const Typed = require('typed.js');
+
+  useEffect(() => {
+
+    const typed = new Typed(animationEl.current, {
+      strings: ['Web3 Protocols','Smart Contracts', 'NFT Markets', 'Defi Protocols'],
+      typeSpeed: 90,
+      loop: true
+    })
+
+    return () => {
+      typed.destroy();
+    }
+
+
+  }, [animationEl])
+
   return (
     <div>
       <header className={`${robotoMono.className}`}>
@@ -17,12 +36,11 @@ export default function Home() {
 
       </header>
       <main
-        className={`flex max-h-screen flex-col items-center overflow-scroll ${robotoMono.className} bg-[url(/cactiBackgroundPattern.svg)] bg-repeat`}
-        
+        className={`flex flex-col items-center overflow-scroll ${robotoMono.className} bg-cacti-dark-blue`}      
       >
 
         {/* Top Panel */}
-        <div className="flex flex-col items-center justify-center mt-16 container mx-auto w-full mx-0 rounded-xl sm:min-h-[80h] lg:min-h-[50vh] xl:min-h-[70vh]" style={{ 
+        <div className="flex flex-col items-center justify-center mt-0 border-cacti-green border-y-2 w-full mx-0 sm:min-h-[80h] lg:min-h-[50vh] xl:min-h-[50vh]" style={{ 
           background: `linear-gradient(
             70deg,
             hsl(199deg 76% 5%) 0%,
@@ -36,21 +54,23 @@ export default function Home() {
             hsl(158deg 100% 16%) 92%,
             hsl(151deg 100% 17%) 100%
           )`,
-          border: '1px solid rgba(46, 140, 135, 1)',
+          // border: '1px solid rgba(46, 140, 135, 1)',
         }}>
 
         <div className="flex flex-col my-5 mt-12 px-3 md:px-0">
          
 
           <div className="flex items-center text-center mx-auto">
-            <h1 className="text-5xl">Cacti🌵</h1>
+            <h1 className="text-4xl lg:text-6xl text-white">🌵🌵🌵 CACTI 🌵🌵🌵</h1>
           </div>
 
-          <div className="text-md md:text-[22px] mt-5 text-center">
-            Interact with Web3 Protocols through Natural Language
+          <div className="text-md md:text-[22px] mt-5 text-center text-white">
+            Use Natural language to Interact with <div className="inline-block min-w-[215px] text-left">
+              <span ref={animationEl}>Web3 Protocols</span> 
+              </div>
           </div>
-          <div className="text-sm md:text-[16px] my-5 text-center">
-            Powered by OpenAI
+          <div className="flex items-center justify-center text-sm md:text-[16px] my-5 text-center text-white">
+            Built by&nbsp;<a href="https://yieldprotocol.com/" target="_blank" rel="noreferrer" className="underline">Yield</a>&nbsp;<img src={'/icons/yield-logo-white.svg'} alt="icon" className="icon w-[16px]" />. Powered by OpenAI.
           </div>
 
           <div className="flex items-center w-full">
@@ -71,19 +91,16 @@ export default function Home() {
         </div>
 
         {/* Panel 3 */}
-        <div className="flex flex-col items-center justify-center mx-auto my-12 px-3 md:px-0 bg-fade-black-to-transparent min-h-[40vh] text-primary" style={{ 
-          
-          // color: 'rgba(211, 232, 186, 1)', 
-           }}>
+        <div className="flex flex-col container items-center justify-center mx-auto mt-12 mb-1 px-3 md:px-0 bg-fade-black-to-transparent min-h-[40vh] text-primary">
           <p className="text-lg md:text-3xl lg:text-5xl">Trade Assets. Retrieve Data.</p>
           <p className="text-lg md:text-3xl lg:text-5xl">Interact with Smart Contracts.</p>
-          <div className="text-center lg:text-left">
-            <p className="text-sm" style={{color: 'rgba(255, 255, 255, 0.8)'}}>The groundbreaking Cacti web-interface is in alpha development, with many protocols already integrated, and more on the way.</p>
+          <div className="text-center pt-2">
+            <p className="text-sm md:text-lg text-white" style={{color: 'rgba(255, 255, 255, 0.8)'}}>The groundbreaking Cacti web-interface is in alpha development, with many protocols already integrated, and more on the way.</p>
           </div>
         </div>
 
         {/* Panel 2 */}
-        <div className="flex flex-col items-center justify-center container mx-auto h-full w-5/6 md:w-2/4" style={{}}>
+        <div className="flex flex-col items-center justify-center container mx-auto h-full w-5/6 md:w-2/4 border border-cacti-green rounded-md py-1 mb-10" style={{}}>
             <video controls height="auto">
               <source src="/videos/yieldVideoHighRes.mp4" type="video/mp4" />
               Your browser does not support the video tag.
@@ -117,10 +134,10 @@ export default function Home() {
         <div className="flex flex-col items-center justify-center mx-auto min-h-[40vh] text-primary bg-fade-black-to-transparent">
           <p className="text-lg md:text-3xl lg:text-5xl mb-5">Open source and built in Public</p>
           <div className="text-center flex flex-col">
-            <p className="text-sm text-[28px] mb-3" style={{color: 'rgba(255, 255, 255, 0.8)'}}>
+            <p className="text-sm md:text-lg text-[28px] mb-3 text-white" style={{color: 'rgba(255, 255, 255, 0.8)'}}>
               We&apos;ve released Cacti under an AGPL license.
             </p>
-            <p className="text-sm text-[28px]" style={{color: 'rgba(255, 255, 255, 0.8)'}}>
+            <p className="text-sm md:text-lg text-[28px] text-white" style={{color: 'rgba(255, 255, 255, 0.8)'}}>
               Use our developer features and start building in the open with us.
             </p>
           </div>

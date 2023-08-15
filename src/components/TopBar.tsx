@@ -10,10 +10,9 @@ const styles: { [key: string]: CSSProperties } = {
     alignItems: 'center',
     padding: '0 20px',
     width: '100%',
-    position: 'fixed',
   },
   text: {
-    fontSize: '14px',
+    fontSize: '18px',
     color: 'white',
     fontWeight: 700,
   },
@@ -22,7 +21,7 @@ const styles: { [key: string]: CSSProperties } = {
 const TopBar = () => {
   return (
     <div style={styles.topBar} className="z-50">
-      <span style={styles.text}>Cacti🌵</span>
+      <span style={styles.text}>🌵🌵🌵 CACTI 🌵🌵🌵</span>
       <div className="flex">
           <a href="https://twitter.com/yield" target="_blank" rel="noopener noreferrer">
             <img src="/icons/twitter.svg" alt="Twitter" className="mr-3 text-white" />
