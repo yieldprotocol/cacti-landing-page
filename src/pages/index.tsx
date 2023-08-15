@@ -36,8 +36,7 @@ export default function Home() {
 
       </header>
       <main
-        className={`flex flex-col items-center overflow-scroll ${robotoMono.className} bg-cacti-dark-blue`}
-        
+        className={`flex flex-col items-center overflow-scroll ${robotoMono.className} bg-cacti-dark-blue`}      
       >
 
         {/* Top Panel */}
@@ -66,10 +65,9 @@ export default function Home() {
           </div>
 
           <div className="text-md md:text-[22px] mt-5 text-center text-white">
-            Interact with <div className="inline-block min-w-[215px] text-left">
+            Use Natural language to Interact with <div className="inline-block min-w-[215px] text-left">
               <span ref={animationEl}>Web3 Protocols</span> 
               </div>
-              through Natural Language
           </div>
           <div className="flex items-center justify-center text-sm md:text-[16px] my-5 text-center text-white">
             Built by&nbsp;<a href="https://yieldprotocol.com/" target="_blank" rel="noreferrer" className="underline">Yield</a>&nbsp;<img src={'/icons/yield-logo-white.svg'} alt="icon" className="icon w-[16px]" />. Powered by OpenAI.
