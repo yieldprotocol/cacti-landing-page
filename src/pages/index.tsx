@@ -2,7 +2,7 @@ import TopBar from "@/components/TopBar"
 import { useRef, useEffect } from "react"
 import { Roboto_Mono } from 'next/font/google'
 import Image from 'next/image'
-import FeatureCardImg from '@/components/FeatureCardImg'
+import FeatureCardMedia from '@/components/FeatureCardMedia'
 import FeatureCardText from '@/components/FeatureCardText'
 import CactiFooter from "@/components/CactiFooter"
 import MailchimpForm from "@/components/MailChimpForm"
@@ -111,19 +111,28 @@ export default function Home() {
         {/* features */}
         <div className="flex flex-col mx-auto h-full" style={{  }}>
 
-          <div>
-            <FeatureCardImg 
+          {/* Uniswap commented out until video */}
+          {/* <div>
+            <FeatureCardMedia 
               header="Trade Assets with Uniswap" 
               subHeader="Trade assets with ease through Cacti. Type your request, and Cacti will manage the swap for you." 
               imagePath="/screenshots/Uniswap.png" 
             />
+          </div> */}
+
+          <div>
+            <FeatureCardMedia
+              header="Search and Acquire NFTs with Opensea"
+              subHeader="Search for NFTs by typing your request. Discover Collections and NFTs available for purchase and acquire them directly through Cacti."
+              videoPath="/videos/NFT-purchase-flow.mp4"
+            />
           </div>
 
           <div>
-            <FeatureCardImg
-              header="Search and Acquire NFTs with Opensea"
-              subHeader="Search for NFTs by typing your request. Discover Collections and NFTs available for purchase and acquire them directly through Cacti."
-              imagePath="/screenshots/Opensea.png"
+            <FeatureCardMedia
+              header="Register and Interact with ENS Domains"
+              subHeader="Effortlessly register and actively manage ENS domains to streamline your online presence."
+              videoPath="/videos/register-ens-and-set-avatar.mp4"
             />
           </div>
 
