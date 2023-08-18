@@ -79,8 +79,8 @@ function MailchimpForm() {
   }
 
   return (
-    <div className="flex flex-col md:flex-row sm:flex-col items-start mx-auto w-full md:w-4/5">
-      <div className="mc-field-group flex-grow mx-auto w-full md:mr-5 mb-3 md:mb-0">
+    <div className="flex flex-col md:flex-row sm:flex-col items-start mx-auto w-full md:w-4/5 justify-between">
+      <div className="mc-field-group flex-grow mx-auto w-full sm:w-[30rem] md:mr-5 mb-3 md:mb-0 ">
         <input
           type="email"
           name="EMAIL"
@@ -90,13 +90,14 @@ function MailchimpForm() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder='Email address'
+     
         />
         <span className="text-red-500 text-xs">{!isValidEmail && 'Please enter a valid email address.'}</span>
       </div>
       <button
         disabled={loading} // Disable button while loading
         onClick={handleSubmit}
-        className="button bg-cacti-green hover:bg-green-700 py-2 px-4 rounded whitespace-nowrap mx-auto min-w-[215px]"
+        className="button bg-cacti-green hover:bg-green-700 py-2 px-4 rounded-full whitespace-nowrap mx-auto min-w-[215px]"
         style={styles.submitButton}
       >
         {loading ? <div className="loading-spinner mx-auto"></div> : success ? "Subscribed!" : "Keep me in the loop"}
