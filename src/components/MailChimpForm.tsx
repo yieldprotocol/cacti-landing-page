@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 function MailchimpForm() {
-  const [email, setEmail] = useState('');
+  const [email, setEmail] = useState("");
   const [isValidEmail, setIsValidEmail] = useState(true);
   const [loading, setLoading] = useState(false); // Track loading state
   const [success, setSuccess] = useState(false); // Track success state
@@ -29,7 +29,7 @@ function MailchimpForm() {
 
     setTimeout(() => {
       setSuccess(false);
-      setEmail('');
+      setEmail("");
     }, 2000); // Delay for 1 second to show checkmark
   };
 
@@ -41,42 +41,40 @@ function MailchimpForm() {
 
   const styles = {
     form: {
-      color: 'black'
+      color: "black",
     },
     submitButton: {
       // backgroundColor: 'rgb(46, 140, 135)',
-      color: 'white',
-      marginTop: '1px'
+      color: "white",
+      marginTop: "1px",
     },
     errorMessage: {
-      color: 'red'
+      color: "red",
     },
-    spinner: {
-
-    }
-  }
+    spinner: {},
+  };
 
   const submitToMailChimp = async () => {
     try {
       const response = await fetch("/.netlify/functions/mailChimp", {
         method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify({ email }),
-      })
+      });
 
       if (!response.ok) {
-        console.log('Error from MailChimp:', response.statusText);
+        console.log("Error from MailChimp:", response.statusText);
         return;
       }
 
-      const data = await response.json()
-      console.log('response from MC', data)
+      const data = await response.json();
+      console.log("response from MC", data);
     } catch (error) {
-      console.log('error from MC', error)
+      console.log("error from MC", error);
     }
-  }
+  };
 
   return (
     <div className="flex flex-col md:flex-row sm:flex-col items-start mx-auto w-full md:w-4/5">
@@ -84,14 +82,18 @@ function MailchimpForm() {
         <input
           type="email"
           name="EMAIL"
-          className={`required email w-full p-2 text-black bg-white border focus:outline-none ${!isValidEmail ? 'border-red-500' : 'border-gray-300'} rounded-md`}
+          className={`required email w-full p-2 text-black bg-white border focus:outline-none ${
+            !isValidEmail ? "border-red-500" : "border-gray-300"
+          } rounded-md`}
           id="mce-EMAIL"
           required
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          placeholder='Email address'
+          placeholder="Email address"
         />
-        <span className="text-red-500 text-xs">{!isValidEmail && 'Please enter a valid email address.'}</span>
+        <span className="text-red-500 text-xs">
+          {!isValidEmail && "Please enter a valid email address."}
+        </span>
       </div>
       <button
         disabled={loading} // Disable button while loading
@@ -99,7 +101,13 @@ function MailchimpForm() {
         className="button bg-cacti-green hover:bg-green-700 py-2 px-4 rounded whitespace-nowrap mx-auto min-w-[215px]"
         style={styles.submitButton}
       >
-        {loading ? <div className="loading-spinner mx-auto"></div> : success ? "Subscribed!" : "Keep me in the loop"}
+        {loading ? (
+          <div className="loading-spinner mx-auto"></div>
+        ) : success ? (
+          "Check Your Email!"
+        ) : (
+          "Keep me in the loop"
+        )}
       </button>
     </div>
   );
