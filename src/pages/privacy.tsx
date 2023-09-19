@@ -4,13 +4,13 @@ export default function Privacy() {
       <div className="text-2xl">Privacy Policy </div>
       <div >
         <div>
-          <p className="text-base">
+          <div className="text-base">
             <strong>
               <em>Date of Last Revision</em>: September 19 , 2023
             </strong>
-          </p>
-          <p className="text-base"></p>
-          <p className="text-base">
+          </div>
+          <div className="text-base"></div>
+          <div className="text-base">
             This Privacy Policy describes the privacy practices of Yield Inc.
             (collectively, “Yield”, "Cacti", “we”, “us”, or “our”) and how we handle
             personal information that we collect through websites we operate,
@@ -21,18 +21,18 @@ export default function Privacy() {
             on which this Privacy Policy is posted (collectively, the “Site”,
             and through other interactions and correspondence with you
             (collectively, the “Interface”).
-          </p>
-          <p className="text-base"></p>
-          <p className="text-base">
+          </div>
+          <div className="text-base"></div>
+          <div className="text-base">
             <strong>Personal information we collect</strong>
-          </p>
-          <p className="text-base"></p>
-          <p className="text-base">
+          </div>
+          <div className="text-base"></div>
+          <div className="text-base">
             <strong>Information you provide to us.</strong>&nbsp;Personal
             information you may provide to us through the Interface or otherwise
             may include:
-          </p>
-          <p className="text-base"></p>
+          </div>
+          <div className="text-base"></div>
           <ul>
             <li>
               <strong>Communications</strong>&nbsp;that we exchange with you,
@@ -45,14 +45,14 @@ export default function Privacy() {
               otherwise disclosed at the time of collection.
             </li>
           </ul>
-          <p className="text-base"></p>
-          <p className="text-base">
+          <div className="text-base"></div>
+          <div className="text-base">
             <strong>Automatic data collection.</strong>&nbsp;We, our service
             providers, and our business partners may automatically log
             information about you, your computer or mobile device, and your
             interaction over time with the Interface, our communications and
             other online services, such as:
-          </p>
+          </div>
           <ul>
             <li>
               <strong>Device data,</strong>&nbsp;such as your computer’s or
@@ -71,11 +71,11 @@ export default function Privacy() {
               a page or screen, access times, and duration of access.
             </li>
           </ul>
-          <p className="text-base"></p>
-          <p className="text-base">
+          <div className="text-base"></div>
+          <div className="text-base">
             <strong>Cookies and similar technologies.</strong>&nbsp;Like many
             online services, we use the following technologies:
-          </p>
+          </div>
           <ul>
             <li>
               <strong>Cookies,</strong>&nbsp;which are text files that websites
@@ -92,21 +92,21 @@ export default function Privacy() {
               clicked.
             </li>
           </ul>
-          <p className="text-base"></p>
-          <p className="text-base">
+          <div className="text-base"></div>
+          <div className="text-base">
             <strong>How we use your personal information</strong>
-          </p>
-          <p className="text-base"></p>
-          <p className="text-base">
+          </div>
+          <div className="text-base"></div>
+          <div className="text-base">
             We use your personal information for the following purposes and as
             otherwise described in this Privacy Policy or at the time of
             collection:
-          </p>
-          <p className="text-base"></p>
-          <p className="text-base">
+          </div>
+          <div className="text-base"></div>
+          <div className="text-base">
             <strong>Interface delivery</strong>. We use your personal
             information to:
-          </p>
+          </div>
           <ul>
             <li>
               provide, operate and improve the Interface and our business;
@@ -122,11 +122,11 @@ export default function Privacy() {
               questions and feedback.
             </li>
           </ul>
-          <p className="text-base"></p>
-          <p className="text-base">
+          <div className="text-base"></div>
+          <div className="text-base">
             <strong>Compliance and protection.</strong>&nbsp;We may use your
             personal information to:
-          </p>
+          </div>
           <ul>
             <li>
               comply with applicable laws, lawful requests, and legal process,
@@ -150,17 +150,17 @@ export default function Privacy() {
               cyberattacks and identity theft.
             </li>
           </ul>
-          <p className="text-base"></p>
-          <p className="text-base">
+          <div className="text-base"></div>
+          <div className="text-base">
             <strong>How we share your personal information</strong>
-          </p>
-          <p className="text-base"></p>
-          <p className="text-base">
+          </div>
+          <div className="text-base"></div>
+          <div className="text-base">
             We may share your personal information with the following parties
             and as otherwise described in this Privacy Policy or at the time of
             collection:
-          </p>
-          <p className="text-base"></p>
+          </div>
+          <div className="text-base"></div>
           <ol>
             <li>
               <strong>Service providers.</strong>&nbsp;Companies and individuals
@@ -191,24 +191,24 @@ export default function Privacy() {
               bankruptcy or similar proceedings).
             </li>
           </ol>
-          <p className="text-base"></p>
-          <p className="text-base">
+          <div className="text-base"></div>
+          <div className="text-base">
             Please keep in mind that whenever you voluntarily make your personal
             information available for viewing by third parties or the public on
             or through our Interface, that information can be seen, collected
             and used by others. We are not responsible for any use of such
             information by others.
-          </p>
-          <p className="text-base"></p>
-          <p className="text-base">
+          </div>
+          <div className="text-base"></div>
+          <div className="text-base">
             <strong>Your choices</strong>
-          </p>
-          <p className="text-base"></p>
-          <p className="text-base">
+          </div>
+          <div className="text-base"></div>
+          <div className="text-base">
             You have the following choices with respect to your personal
             information.
-          </p>
-          <p className="text-base"></p>
+          </div>
+          <div className="text-base"></div>
           <ol>
             <li>
               <strong>Cookies.</strong>&nbsp;Most browser settings let you
@@ -224,7 +224,7 @@ export default function Privacy() {
               .
             </li>
           </ol>
-          <p className="text-base"></p>
+          <div className="text-base"></div>
           <ol>
             <li>
               We use Google Analytics to help us understand user activity on the
@@ -246,7 +246,7 @@ export default function Privacy() {
               .
             </li>
           </ol>
-          <p className="text-base"></p>
+          <div className="text-base"></div>
           <ol>
             <li>
               Opt out of marketing communications.&nbsp;You may opt out of
@@ -255,28 +255,28 @@ export default function Privacy() {
               at&nbsp;contact@yield.is.
             </li>
           </ol>
-          <p className="text-base"></p>
-          <p className="text-base">
+          <div className="text-base"></div>
+          <div className="text-base">
             Do Not Track.&nbsp;Some Internet browsers may be configured to send
             “Do Not Track” signals to the online services that you visit. We
             currently do not respond to “Do Not Track” or similar signals. To
             find out more about “Do Not Track,” please visit&nbsp;
             <a href="http://www.allaboutdnt.com/">http://www.allaboutdnt.com</a>
             .
-          </p>
-          <p className="text-base"></p>
-          <p className="text-base">
+          </div>
+          <div className="text-base"></div>
+          <div className="text-base">
             <strong>Declining to provide information.</strong>&nbsp;We need to
             collect personal information to provide certain services. If you do
             not provide the information we identify as required or mandatory or
             later request that we delete it, we may not be able to provide those
             services.
-          </p>
-          <p className="text-base"></p>
-          <p className="text-base">
+          </div>
+          <div className="text-base"></div>
+          <div className="text-base">
             <strong>Other sites and services</strong>
-          </p>
-          <p className="text-base">
+          </div>
+          <div className="text-base">
             The Interface may contain links to websites and other online
             services operated by third parties. In addition, our content may be
             integrated into web pages or other online services that are not
@@ -284,22 +284,22 @@ export default function Privacy() {
             endorsement of, or representation that we are affiliated with, any
             third party. We do not control websites or online services operated
             by third parties, and we are not responsible for their actions.
-          </p>
-          <p className="text-base"></p>
-          <p className="text-base">
+          </div>
+          <div className="text-base"></div>
+          <div className="text-base">
             <strong>Children</strong>
-          </p>
-          <p className="text-base">
+          </div>
+          <div className="text-base">
             The Interface is not intended for use by children under 13 years of
             age. If we learn that we have collected personal information through
             the Interface from a child under 13 without the consent of the
             child’s parent or guardian as required by law, we will delete it.
-          </p>
-          <p className="text-base"></p>
-          <p className="text-base">
+          </div>
+          <div className="text-base"></div>
+          <div className="text-base">
             <strong>Changes to this Privacy Policy</strong>
-          </p>
-          <p className="text-base">
+          </div>
+          <div className="text-base">
             We reserve the right to modify this Privacy Policy at any time. If
             we make material changes to this Privacy Policy, we will notify you
             by updating the date of this Privacy Policy and posting it on the
@@ -311,16 +311,16 @@ export default function Privacy() {
             of posting). In all cases, your use of the Interface after the
             effective date of any modified Privacy Policy indicates your
             acceptance of the modified Privacy Policy.
-          </p>
-          <p className="text-base"></p>
-          <p className="text-base">
+          </div>
+          <div className="text-base"></div>
+          <div className="text-base">
             <strong>How to contact us</strong>
-          </p>
-          <p className="text-base"></p>
-          <p className="text-base">
+          </div>
+          <div className="text-base"></div>
+          <div className="text-base">
             You can reach us by email at&nbsp;
             <a href="mailto:contact@yield.is">contact@yield.is</a>.
-          </p>
+          </div>
         </div>
       </div>
     </div>

@@ -3,17 +3,17 @@ export default function Terms() {
     <div className="text-xl p-8 gap-4">
       <div className="text-2xl">Terms of Service</div>
       <div>
-        <p className="text-base">
+        <div className="text-base">
           <strong>
             <em>Date of Last Revision</em>: September 19 , 2023
           </strong>
-        </p>
-        <p className="text-base"></p>
-        <p className="text-base">
+        </div>
+        <div className="text-base"></div>
+        <div className="text-base">
           <strong>Acceptance of These Terms of Service</strong>
-        </p>
-        <p className="text-base"></p>
-        <p className="text-base">
+        </div>
+        <div className="text-base"></div>
+        <div className="text-base">
           Yield, Inc. (“Yield Inc.,”, "Cacti", “we,” “us,” or “our”) provides a
           website-hosted user interface (the&nbsp;“Interface”) for accessing
           Yield Protocol, a decentralized protocol on the Ethereum blockchain
@@ -38,9 +38,9 @@ export default function Terms() {
           that entity or organization).If you do not accept the terms and
           conditions of these Terms of Service, you will not access, browse or
           otherwise use the Service.
-        </p>
-        <p className="text-base"></p>
-        <p className="text-base">
+        </div>
+        <div className="text-base"></div>
+        <div className="text-base">
           We reserve the right, at our sole discretion, to change or modify
           portions of these Terms of Service at any time. If we do this, we will
           post the changes on this page and will indicate at the top of this
@@ -53,9 +53,9 @@ export default function Terms() {
           any revisions. If you do not agree to abide by these or any future
           Terms of Service, you will not access, browse, or use (or continue to
           access, browse, or use) the Service.
-        </p>
-        <p className="text-base"></p>
-        <p className="text-base">
+        </div>
+        <div className="text-base"></div>
+        <div className="text-base">
           <strong>
             <em>
               PLEASE READ THESE TERMS OF SERVICE CAREFULLY, AS THEY CONTAIN AN
@@ -72,9 +72,9 @@ export default function Terms() {
               IN A COURT OF LAW.
             </em>
           </strong>
-        </p>
-        <p className="text-base"></p>
-        <p className="text-base">
+        </div>
+        <div className="text-base"></div>
+        <div className="text-base">
           <strong>Your Privacy: </strong>When you use the Interface or Protocol,
           the only information we receive is information related to the access
           of our side, for example: the IP address of the requester and related
@@ -87,51 +87,51 @@ export default function Terms() {
           https://cacti.finance/privacy (the “Privacy Policy”). By using the
           Service, you consent to our collection, use and disclosure of Personal
           Data and other data as outlined therein.
-        </p>
-        <p className="text-base"></p>
-        <p className="text-base">
+        </div>
+        <div className="text-base"></div>
+        <div className="text-base">
           <strong>Additional Terms</strong>: In addition, when using certain
           features through the Service, you will be subject to any additional
           terms applicable to such features that may be posted on or within the
           Service from time to time. All such terms are hereby incorporated by
           reference into these Terms of Service.
-        </p>
-        <p className="text-base"></p>
-        <p className="text-base">
+        </div>
+        <div className="text-base"></div>
+        <div className="text-base">
           <strong>Access and Use of the Service</strong>
-        </p>
-        <p className="text-base"></p>
-        <p className="text-base">
+        </div>
+        <div className="text-base"></div>
+        <div className="text-base">
           <strong>Legal Compliance:</strong> You represent that your access and
           use of the Service will fully comply with all applicable laws and
           regulations, and that you will not access or use the Service to
           conduct, promote, or otherwise facilitate any illegal activity.
-        </p>
-        <p className="text-base"></p>
-        <p className="text-base"></p>
-        <p className="text-base">
+        </div>
+        <div className="text-base"></div>
+        <div className="text-base"></div>
+        <div className="text-base">
           <strong>Modifications to Service: </strong>We reserve the right to
           modify or discontinue, temporarily or permanently, the Service (or any
           part thereof) with or without notice. You agree that we will not be
           liable to you or to any third party for any modification, suspension
           or discontinuance of the Service.
-        </p>
-        <p className="text-base"></p>
-        <p className="text-base"></p>
-        <p className="text-base">
+        </div>
+        <div className="text-base"></div>
+        <div className="text-base"></div>
+        <div className="text-base">
           <strong>Conditions of Access and Use</strong>
-        </p>
-        <p className="text-base"></p>
-        <p className="text-base">
+        </div>
+        <div className="text-base"></div>
+        <div className="text-base">
           <strong>User Conduct: </strong>The following are examples of the kinds
           of content and/or uses that are illegal or prohibited by us. We
           reserve the right to investigate and take appropriate legal action
           against anyone who, in our sole discretion, violates this provision,
           including reporting the violator to law enforcement authorities. You
           agree to not use the Service:
-        </p>
-        <p className="text-base"></p>
-        <p className="text-base">
+        </div>
+        <div className="text-base"></div>
+        <div className="text-base">
           distribute any content that (i) infringes any intellectual property or
           other proprietary rights of any party; (ii) you do not have a right to
           upload under any law or under contractual or fiduciary relationships;
@@ -149,55 +149,55 @@ export default function Terms() {
           sole judgment of us, is objectionable or which restricts or inhibits
           any other person from using or enjoying the Service, or which may
           expose us or its users to any harm or liability of any type;
-        </p>
-        <p className="text-base">
+        </div>
+        <div className="text-base">
           seek to interfere with or compromise the integrity, security, or
           proper functioning of any computer, server, network, personal device,
           or other information technology system, including the deployment of
           viruses and denial of service attacks;
-        </p>
-        <p className="text-base">
+        </div>
+        <div className="text-base">
           violate any applicable local, state, national, or international law,
           or any regulations having the force of law, including any laws or
           regulations concerning the integrity of trading markets (e.g.,
           manipulative tactics commonly known as spoofing and wash trading) or
           trading of securities or derivatives;
-        </p>
-        <p className="text-base">
+        </div>
+        <div className="text-base">
           engage in any activity that seeks to defraud us or any other person or
           entity, including providing any false, inaccurate, or misleading
           information in order to unlawfully obtain the property of another;
-        </p>
-        <p className="text-base">
+        </div>
+        <div className="text-base">
           impersonate any person or entity, or falsely state or otherwise
           misrepresent your affiliation with a person or entity;
-        </p>
-        <p className="text-base">
+        </div>
+        <div className="text-base">
           solicit personal information from anyone under the age of 18;
-        </p>
-        <p className="text-base">
+        </div>
+        <div className="text-base">
           harvest or collect email addresses or other contact information of
           other users from the Service by electronic or other means for the
           purposes of sending unsolicited emails or other unsolicited
           communications; or
-        </p>
-        <p className="text-base">
+        </div>
+        <div className="text-base">
           further or promote any criminal activity or enterprise or provide
           instructional information about illegal activities.
-        </p>
-        <p className="text-base"></p>
-        <p className="text-base">
+        </div>
+        <div className="text-base"></div>
+        <div className="text-base">
           If you are blocked by us from accessing the Service (including by
           blocking your IP address), you agree not to implement any measures to
           circumvent such blocking (e.g., by masking your IP address or using a
           proxy IP address or virtual private network).
-        </p>
-        <p className="text-base"></p>
-        <p className="text-base">
+        </div>
+        <div className="text-base"></div>
+        <div className="text-base">
           <strong>No Professional Advice and No Fiduciary Duties</strong>
-        </p>
-        <p className="text-base"></p>
-        <p className="text-base">
+        </div>
+        <div className="text-base"></div>
+        <div className="text-base">
           All information provided by the Service is for informational purposes
           only and should not be construed as professional advice. You should
           not take, or refrain from taking, any action based on any information
@@ -205,9 +205,9 @@ export default function Terms() {
           other decisions involving the Service, you should seek independent
           professional advice from an individual who is licensed and qualified
           in the area for which such advice would be appropriate.
-        </p>
-        <p className="text-base"></p>
-        <p className="text-base">
+        </div>
+        <div className="text-base"></div>
+        <div className="text-base">
           These Terms of Service are not intended to, and do not, create or
           impose any fiduciary duties on us. To the fullest extent permitted by
           law, you acknowledge and agree that we owe no fiduciary duties or
@@ -216,13 +216,13 @@ export default function Terms() {
           liabilities are hereby irrevocably disclaimed, waived, and eliminated.
           You further agree that the only duties and obligations that we owe you
           are those set out expressly in these Terms of Service.
-        </p>
-        <p className="text-base"></p>
-        <p className="text-base">
+        </div>
+        <div className="text-base"></div>
+        <div className="text-base">
           <strong>Intellectual Property Rights</strong>
-        </p>
-        <p className="text-base"></p>
-        <p className="text-base">
+        </div>
+        <div className="text-base"></div>
+        <div className="text-base">
           <strong>Service Content: </strong>You acknowledge and agree that the
           Service may contain content or features (“Service Content”) that are
           protected by copyright, patent, trademark, trade secret, or other
@@ -235,9 +235,9 @@ export default function Terms() {
           to or make available through the Service in accordance with these
           Terms of Service. Any use of the Service or the Service Content other
           than as specifically authorized herein is strictly prohibited.
-        </p>
-        <p className="text-base"></p>
-        <p className="text-base">
+        </div>
+        <div className="text-base"></div>
+        <div className="text-base">
           <strong>Trademarks:</strong> Our name and logos are trademarks and
           service marks of us (collectively the “Yield Trademarks”). Other
           company, product, and service names and logos used and displayed via
@@ -249,9 +249,9 @@ export default function Terms() {
           Service, without our prior written permission in each instance. All
           goodwill generated from the use of our Trademarks will inure to our
           exclusive benefit.
-        </p>
-        <p className="text-base"></p>
-        <p className="text-base">
+        </div>
+        <div className="text-base"></div>
+        <div className="text-base">
           <strong>Third-Party Material: </strong>Under no circumstances will we
           be liable in any way for any content or materials of any third parties
           (including users), including for any errors or omissions in any
@@ -266,26 +266,26 @@ export default function Terms() {
           that you must evaluate, and bear all risks associated with, the use of
           any content, including any reliance on the accuracy, completeness, or
           usefulness of such content.
-        </p>
-        <p className="text-base"></p>
-        <p className="text-base"></p>
-        <p className="text-base">
+        </div>
+        <div className="text-base"></div>
+        <div className="text-base"></div>
+        <div className="text-base">
           You hereby authorize us and our third-party service providers to
           derive statistical and usage data relating to your use of the Site
           (“Usage Data”). We may use Usage Data for any purpose in accordance
           with applicable law and our Privacy Policy.
-        </p>
-        <p className="text-base"></p>
-        <p className="text-base">
+        </div>
+        <div className="text-base"></div>
+        <div className="text-base">
           Any questions, comments, suggestions, ideas, feedback, reviews, or
           other information about the Service (“Submissions”), provided by you
           to us are non-confidential and we will be entitled to the unrestricted
           use and dissemination of these Submissions for any purpose, commercial
           or otherwise, without acknowledgment, attribution, or compensation to
           you.
-        </p>
-        <p className="text-base"></p>
-        <p className="text-base">
+        </div>
+        <div className="text-base"></div>
+        <div className="text-base">
           You acknowledge and agree that we may preserve content and may also
           disclose content if required to do so by law or in the good faith
           belief that such preservation or disclosure is reasonably necessary
@@ -297,13 +297,13 @@ export default function Terms() {
           of the Service, including your content, may involve (i) transmissions
           over various networks; and (ii) changes to conform and adapt to
           technical requirements of connecting networks or devices.
-        </p>
-        <p className="text-base"></p>
-        <p className="text-base">
+        </div>
+        <div className="text-base"></div>
+        <div className="text-base">
           <strong>Third-Party Services</strong>
-        </p>
-        <p className="text-base"></p>
-        <p className="text-base">
+        </div>
+        <div className="text-base"></div>
+        <div className="text-base">
           The Service provides access to services, sites, technology,
           applications and resources that are provided or otherwise made
           available by third parties (the “Third-Party Services”). Your access
@@ -323,13 +323,13 @@ export default function Terms() {
           third party. We will not be responsible or liable, directly or
           indirectly, for any damage or loss caused or alleged to be caused by
           or in connection with use of or reliance on any Third-Party Services.
-        </p>
-        <p className="text-base"></p>
-        <p className="text-base">
+        </div>
+        <div className="text-base"></div>
+        <div className="text-base">
           <strong>Indemnification and Release</strong>
-        </p>
-        <p className="text-base"></p>
-        <p className="text-base">
+        </div>
+        <div className="text-base"></div>
+        <div className="text-base">
           You agree to defend, indemnify, and hold harmless us, its affiliates,
           and its and their respective officers, employees, directors, service
           providers, licensors, and agents (collectively, the “Yield Parties”)
@@ -344,9 +344,9 @@ export default function Terms() {
           you agree to cooperate with any reasonable requests assisting our
           defense of such matter. You may not settle or compromise any claim
           against the Yield Parties without our written consent.
-        </p>
-        <p className="text-base"></p>
-        <p className="text-base">
+        </div>
+        <div className="text-base"></div>
+        <div className="text-base">
           You expressly agree that you assume all risks in connection with your
           access and use of the Service, including your interaction with the
           Protocol. You further expressly waive and release us from any and all
@@ -360,22 +360,22 @@ export default function Terms() {
           materially affected his or her settlement with the debtor or releasing
           party.” If you are a resident of another jurisdiction, you waive any
           comparable statute or doctrine.
-        </p>
-        <p className="text-base"></p>
-        <p className="text-base">
+        </div>
+        <div className="text-base"></div>
+        <div className="text-base">
           <strong>Disclaimer of Warranties; Assumption of Risk</strong>
-        </p>
-        <p className="text-base"></p>
-        <p className="text-base">
+        </div>
+        <div className="text-base"></div>
+        <div className="text-base">
           YOUR USE OF THE SERVICE AND PROTOCOL IS AT YOUR SOLE RISK. THE SERVICE
           IS PROVIDED ON AN “AS IS” AND “AS AVAILABLE” BASIS. THE YIELD PARTIES
           EXPRESSLY DISCLAIM ALL WARRANTIES OF ANY KIND, WHETHER EXPRESS,
           IMPLIED OR STATUTORY, INCLUDING THE IMPLIED WARRANTIES OF
           MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND
           NON-INFRINGEMENT.
-        </p>
-        <p className="text-base"></p>
-        <p className="text-base">
+        </div>
+        <div className="text-base"></div>
+        <div className="text-base">
           THE YIELD PARTIES MAKE NO WARRANTY THAT (A) THE SERVICE WILL MEET YOUR
           REQUIREMENTS; (B) THE SERVICE WILL BE UNINTERRUPTED, TIMELY, SECURE,
           OR ERROR-FREE; (C) THE RESULTS THAT MAY BE OBTAINED FROM THE USE OF
@@ -383,9 +383,9 @@ export default function Terms() {
           PRODUCTS, SERVICES, APPLICATIONS, INFORMATION, OR OTHER MATERIAL
           PURCHASED OR OBTAINED BY YOU THROUGH THE SERVICE WILL MEET YOUR
           EXPECTATIONS.
-        </p>
-        <p className="text-base"></p>
-        <p className="text-base">
+        </div>
+        <div className="text-base"></div>
+        <div className="text-base">
           BY ACCESSING AND USING THE SERVICE AND PROTOCOL, YOU REPRESENT AND
           WARRANT THAT YOU UNDERSTAND THE INHERENT RISKS ASSOCIATED WITH USING
           CRYPTOGRAPHIC AND BLOCKCHAIN-BASED SYSTEMS, AND THAT YOU HAVE A
@@ -412,13 +412,13 @@ export default function Terms() {
           TO ASSUME FULL RESPONSIBILITY FOR ALL OF THE RISKS OF ACCESSING AND
           USING THE SERVICE, INCLUDING THE INTERFACE TO INTERACT WITH THE
           PROTOCOL.
-        </p>
-        <p className="text-base"></p>
-        <p className="text-base">
+        </div>
+        <div className="text-base"></div>
+        <div className="text-base">
           <strong>Limitation of Liability</strong>
-        </p>
-        <p className="text-base"></p>
-        <p className="text-base">
+        </div>
+        <div className="text-base"></div>
+        <div className="text-base">
           YOU EXPRESSLY UNDERSTAND AND AGREE THAT THE YIELD PARTIES WILL NOT BE
           LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY
           DAMAGES, OR DAMAGES FOR LOSS OF PROFITS INCLUDING DAMAGES FOR LOSS OF
@@ -440,9 +440,9 @@ export default function Terms() {
           YOU FOR ALL DAMAGES, LOSSES, OR CAUSES OF ACTION EXCEED THE AMOUNT YOU
           HAVE PAID US IN THE LAST SIX (6) MONTHS, OR, IF GREATER, ONE HUNDRED
           DOLLARS ($100).
-        </p>
-        <p className="text-base"></p>
-        <p className="text-base">
+        </div>
+        <div className="text-base"></div>
+        <div className="text-base">
           SOME JURISDICTIONS DO NOT ALLOW THE DISCLAIMER OR EXCLUSION OF CERTAIN
           WARRANTIES OR THE LIMITATION OR EXCLUSION OF LIABILITY FOR INCIDENTAL
           OR CONSEQUENTIAL DAMAGES. ACCORDINGLY, SOME OF THE ABOVE LIMITATIONS
@@ -450,9 +450,9 @@ export default function Terms() {
           YOU. IF YOU ARE DISSATISFIED WITH ANY PORTION OF THE SERVICE OR WITH
           THESE TERMS OF SERVICE, YOUR SOLE AND EXCLUSIVE REMEDY IS TO
           DISCONTINUE USE OF THE SERVICE.
-        </p>
-        <p className="text-base"></p>
-        <p className="text-base">
+        </div>
+        <div className="text-base"></div>
+        <div className="text-base">
           IF YOU ARE A USER FROM NEW JERSEY, THE FOREGOING SECTIONS TITLED
           “DISCLAIMER OF WARRANTIES; ASSUMPTION OF RISK” AND “LIMITATION OF
           LIABILITY” ARE INTENDED TO BE ONLY AS BROAD AS IS PERMITTED UNDER THE
@@ -460,23 +460,23 @@ export default function Terms() {
           HELD TO BE INVALID UNDER THE LAWS OF THE STATE OF NEW JERSEY, THE
           INVALIDITY OF SUCH PORTION WILL NOT AFFECT THE VALIDITY OF THE
           REMAINING PORTIONS OF THE APPLICABLE SECTIONS.
-        </p>
-        <p className="text-base"></p>
-        <p className="text-base">
+        </div>
+        <div className="text-base"></div>
+        <div className="text-base">
           <strong>Dispute Resolution By Binding Arbitration</strong>
-        </p>
-        <p className="text-base"></p>
-        <p className="text-base">
+        </div>
+        <div className="text-base"></div>
+        <div className="text-base">
           <strong>
             PLEASE READ THIS SECTION CAREFULLY AS IT AFFECTS YOUR RIGHTS.
           </strong>
-        </p>
-        <p className="text-base"></p>
-        <p className="text-base">
+        </div>
+        <div className="text-base"></div>
+        <div className="text-base">
           <strong>Agreement to Arbitrate</strong>
-        </p>
-        <p className="text-base"></p>
-        <p className="text-base">
+        </div>
+        <div className="text-base"></div>
+        <div className="text-base">
           This Dispute Resolution by Binding Arbitration section is referred to
           in these Terms of Service as the “Arbitration Agreement.” You agree
           that any and all disputes or claims that have arisen or may arise
@@ -495,16 +495,16 @@ export default function Terms() {
           Your rights will be determined by a neutral arbitrator, not a judge or
           jury. The Federal Arbitration Act governs the interpretation and
           enforcement of this Arbitration Agreement.
-        </p>
-        <p className="text-base"></p>
-        <p className="text-base">
+        </div>
+        <div className="text-base"></div>
+        <div className="text-base">
           <strong>
             Prohibition of Class and Representative Actions and
             Non-Individualized Relief
           </strong>
-        </p>
-        <p className="text-base"></p>
-        <p className="text-base">
+        </div>
+        <div className="text-base"></div>
+        <div className="text-base">
           <strong>
             <em>
               YOU AND WE AGREE THAT EACH OF US MAY BRING CLAIMS AGAINST THE
@@ -523,13 +523,13 @@ export default function Terms() {
               THE ENFORCEABILITY OF THIS PROVISION.
             </em>
           </strong>
-        </p>
-        <p className="text-base"></p>
-        <p className="text-base">
+        </div>
+        <div className="text-base"></div>
+        <div className="text-base">
           <strong>Pre-Arbitration Dispute Resolution</strong>
-        </p>
-        <p className="text-base"></p>
-        <p className="text-base">
+        </div>
+        <div className="text-base"></div>
+        <div className="text-base">
           We are always interested in resolving disputes amicably and
           efficiently, and most customer concerns can be resolved quickly and to
           the customer’s satisfaction by emailing customer support at
@@ -544,13 +544,13 @@ export default function Terms() {
           of any settlement offer made by us or you will not be disclosed to the
           arbitrator until after the arbitrator determines the amount, if any,
           to which you or we are entitled.
-        </p>
-        <p className="text-base"></p>
-        <p className="text-base">
+        </div>
+        <div className="text-base"></div>
+        <div className="text-base">
           <strong>Arbitration Procedures</strong>
-        </p>
-        <p className="text-base"></p>
-        <p className="text-base">
+        </div>
+        <div className="text-base"></div>
+        <div className="text-base">
           Arbitration will be conducted by a neutral arbitrator in accordance
           with the American Arbitration Association’s (“AAA”) rules and
           procedures, including the AAA’s Consumer Arbitration Rules
@@ -576,9 +576,9 @@ export default function Terms() {
           these Terms of Service and applicable law. Decisions by the arbitrator
           are enforceable in court and may be overturned by a court only for
           very limited reasons.
-        </p>
-        <p className="text-base"></p>
-        <p className="text-base">
+        </div>
+        <div className="text-base"></div>
+        <div className="text-base">
           Unless we and you agree otherwise, any arbitration hearings will take
           place in a reasonably convenient location for both parties with due
           consideration of their ability to travel and other pertinent
@@ -592,13 +592,13 @@ export default function Terms() {
           the manner in which the arbitration is conducted, the arbitrator will
           issue a reasoned written decision sufficient to explain the essential
           findings and conclusions on which the award is based.
-        </p>
-        <p className="text-base"></p>
-        <p className="text-base">
+        </div>
+        <div className="text-base"></div>
+        <div className="text-base">
           <strong>Costs of Arbitration</strong>
-        </p>
-        <p className="text-base"></p>
-        <p className="text-base">
+        </div>
+        <div className="text-base"></div>
+        <div className="text-base">
           Payment of all filing, administration, and arbitrator fees
           (collectively, the “Arbitration Fees”) will be governed by the AAA
           Rules, unless otherwise provided in this Arbitration Agreement. If the
@@ -614,23 +614,23 @@ export default function Terms() {
           Arbitration Fees as the arbitrator deems necessary to prevent the
           arbitration from being cost-prohibitive. Any payment of attorneys’
           fees will be governed by the AAA Rules.
-        </p>
-        <p className="text-base"></p>
-        <p className="text-base">
+        </div>
+        <div className="text-base"></div>
+        <div className="text-base">
           <strong>Confidentiality</strong>
-        </p>
-        <p className="text-base"></p>
-        <p className="text-base">
+        </div>
+        <div className="text-base"></div>
+        <div className="text-base">
           All aspects of the arbitration proceeding, and any ruling, decision,
           or award by the arbitrator, will be strictly confidential for the
           benefit of all parties.
-        </p>
-        <p className="text-base"></p>
-        <p className="text-base">
+        </div>
+        <div className="text-base"></div>
+        <div className="text-base">
           <strong>Severability</strong>
-        </p>
-        <p className="text-base"></p>
-        <p className="text-base">
+        </div>
+        <div className="text-base"></div>
+        <div className="text-base">
           If a court or the arbitrator decides that any term or provision of
           this Arbitration Agreement (other than the subsection (b) above titled
           “Prohibition of Class and Representative Actions and
@@ -647,13 +647,13 @@ export default function Terms() {
           unenforceable solely with respect to claims for public injunctive
           relief. The remainder of these Terms of Service will continue to
           apply.
-        </p>
-        <p className="text-base"></p>
-        <p className="text-base">
+        </div>
+        <div className="text-base"></div>
+        <div className="text-base">
           <strong>Future Changes to Arbitration Agreement</strong>
-        </p>
-        <p className="text-base"></p>
-        <p className="text-base">
+        </div>
+        <div className="text-base"></div>
+        <div className="text-base">
           Notwithstanding any provision in these Terms of Service to the
           contrary, we agrees that if it makes any future change to this
           Arbitration Agreement (other than a change to the Notice Address)
@@ -664,14 +664,14 @@ export default function Terms() {
           us in accordance with the language of this Arbitration Agreement as of
           the date you first accepted these Terms of Service (or accepted any
           subsequent changes to these Terms of Service).
-        </p>
-        <p className="text-base"></p>
-        <p className="text-base"></p>
-        <p className="text-base">
+        </div>
+        <div className="text-base"></div>
+        <div className="text-base"></div>
+        <div className="text-base">
           <strong>General</strong>
-        </p>
-        <p className="text-base"></p>
-        <p className="text-base">
+        </div>
+        <div className="text-base"></div>
+        <div className="text-base">
           These Terms of Service (together with the terms incorporated by
           reference herein) constitute the entire agreement between you and us
           governing your access and use of the Service, and supersede any prior
@@ -717,19 +717,19 @@ export default function Terms() {
           fluctuations or unavailability of electrical power, network access or
           equipment, or any other circumstances or causes beyond our reasonable
           control.
-        </p>
-        <p className="text-base"></p>
-        <p className="text-base"></p>
-        <p className="text-base">
+        </div>
+        <div className="text-base"></div>
+        <div className="text-base"></div>
+        <div className="text-base">
           <strong>Questions? Concerns? Suggestions?</strong>
-        </p>
-        <p className="text-base">
+        </div>
+        <div className="text-base">
           <br />
           Please contact us at
           <a href="mailto:contact@yield.is">contact@yield.is</a> to report any
           violations of these Terms of Service or to pose any questions
           regarding these Terms of Service or the Service.
-        </p>
+        </div>
       </div>
     </div>
   );
