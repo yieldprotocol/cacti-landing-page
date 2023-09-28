@@ -93,15 +93,25 @@ export default function Home() {
             <div className="flex items-center w-full">
               <MailchimpForm />
             </div>
-            <div className="flex items-center my-3">
+            <div className="flex flex-col sm:flex-row items-center justify-items-center my-3">
               <a
                 href="https://github.com/yieldprotocol/cacti-backend"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mx-auto"
+                className="mx-auto sm:ml-auto sm:mr-4"
               >
                 <button className="border border-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mx-auto">
                   Show me the code 💻
+                </button>
+              </a>
+              <a
+                href="https://app.cacti.finance/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mx-auto sm:mr-auto mt-3 sm:mt-0 sm:ml-1"
+              >
+                <button className="border border-white hover:border-white bg-black hover:bg-white text-white hover:text-black font-bold py-2 px-4 rounded mx-auto">
+                  Try the Beta 🚀
                 </button>
               </a>
             </div>
@@ -235,14 +245,25 @@ export default function Home() {
         <div className="flex flex-col items-center justify-center mx-auto text-primary bg-fade-black-to-transparent min-h-[40vh] w-5/6">
           <p className="text-lg md:text-5xl mb-5">Come build with us</p>
           <div className="text-center flex flex-col">
-            <div className="flex items-center">
+          <div className="flex flex-col sm:flex-row items-center justify-items-center my-3">
               <a
                 href="https://github.com/yieldprotocol/cacti-backend"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="mx-auto sm:ml-auto sm:mr-4"
               >
                 <button className="border border-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mx-auto">
                   Show me the code 💻
+                </button>
+              </a>
+              <a
+                href="https://app.cacti.finance/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mx-auto sm:mr-auto mt-3 sm:mt-0 sm:ml-1"
+              >
+                <button className="border border-white hover:border-white bg-black hover:bg-white text-white hover:text-black font-bold py-2 px-4 rounded mx-auto">
+                  Try the Beta 🚀
                 </button>
               </a>
             </div>
